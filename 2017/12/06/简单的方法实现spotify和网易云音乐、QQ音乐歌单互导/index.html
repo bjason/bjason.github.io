@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+
+
+
+
+<html class="theme-next muse" lang="zh-CN">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+<link href="https://fonts.googleapis.com/css?family=Noto+Serif+SC:400,500,700,900&display=swap&subset=chinese-simplified" rel="stylesheet">
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="音乐,教程,文档," />
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="本文介绍了如何使用简单的方法进行Spotify和网易云音乐、QQ音乐的歌单互相导入。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="简单的方法实现spotify和网易云音乐、QQ音乐歌单互导">
+<meta property="og:url" content="https://bjason.github.io/2017/12/06/%E7%AE%80%E5%8D%95%E7%9A%84%E6%96%B9%E6%B3%95%E5%AE%9E%E7%8E%B0spotify%E5%92%8C%E7%BD%91%E6%98%93%E4%BA%91%E9%9F%B3%E4%B9%90%E3%80%81QQ%E9%9F%B3%E4%B9%90%E6%AD%8C%E5%8D%95%E4%BA%92%E5%AF%BC/index.html">
+<meta property="og:site_name">
+<meta property="og:description" content="本文介绍了如何使用简单的方法进行Spotify和网易云音乐、QQ音乐的歌单互相导入。">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://developer.spotify.com/assets/branding-guidelines/logo@2x.png">
+<meta property="article:published_time" content="2017-12-06T22:03:34.000Z">
+<meta property="article:modified_time" content="2020-03-21T22:07:36.445Z">
+<meta property="article:author" content="Jason Lei">
+<meta property="article:tag" content="音乐">
+<meta property="article:tag" content="教程">
+<meta property="article:tag" content="文档">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://developer.spotify.com/assets/branding-guidelines/logo@2x.png">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":false,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: 'Author'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="https://bjason.github.io/2017/12/06/简单的方法实现spotify和网易云音乐、QQ音乐歌单互导/"/>
+
+
+
+
+
+  <title>简单的方法实现spotify和网易云音乐、QQ音乐歌单互导 | </title>
+  
+
+
+
+
+
+
+
+
+<meta name="generator" content="Hexo 4.2.0"></head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title"></span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+            Home
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+            Tags
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+            Categories
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-projects">
+          <a href="/projects" rel="section">
+            
+            Projects
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-gallery">
+          <a href="/gallery" rel="section">
+            
+            Gallery
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-map">
+          <a href="/Map" rel="section">
+            
+            Map
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://bjason.github.io/2017/12/06/%E7%AE%80%E5%8D%95%E7%9A%84%E6%96%B9%E6%B3%95%E5%AE%9E%E7%8E%B0spotify%E5%92%8C%E7%BD%91%E6%98%93%E4%BA%91%E9%9F%B3%E4%B9%90%E3%80%81QQ%E9%9F%B3%E4%B9%90%E6%AD%8C%E5%8D%95%E4%BA%92%E5%AF%BC/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Jason Lei">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">简单的方法实现spotify和网易云音乐、QQ音乐歌单互导</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-12-06T14:03:34-08:00">
+                2017-12-06
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E6%95%99%E7%A8%8B/" itemprop="url" rel="index">
+                    <span itemprop="name">教程</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p><img src="https://developer.spotify.com/assets/branding-guidelines/logo@2x.png" alt="Spotify logo"></p>
+<p>本文介绍了如何使用简单的方法进行Spotify和网易云音乐、QQ音乐的歌单互相导入。</p>
+<a id="more"></a>
+
+<p>##<del>如何将spotify歌单导入网易云音乐？（失效）</del><br>update：官方已经关闭了导入酷狗歌单的通道。<br>关于这一点，虽然网上已经有不少方法，但是大多还需要自己手动更改不少东西，总体来说十分麻烦。但原理一般都是利用网易提供的导入酷狗歌单（.KGL）文件进行导入，依葫芦画瓢，写了个很小的程序，具体的操作如下：</p>
+<p>######步骤</p>
+<ol>
+<li>进入<a href="https://rawgit.com/watsonbox/exportify/master/exportify.html" target="_blank" rel="noopener">这个页面</a>，以.csv格式导出你需要导入到网易云音乐的歌单。</li>
+<li>从<a href="https://github.com/bjason/Convert-.CSV-to-.kgl" target="_blank" rel="noopener">这里</a>下载<a href="https://github.com/bjason/Convert-.CSV-to-.kgl/blob/master/csvToKgl.py" target="_blank" rel="noopener">csvToKgl.py</a>文件，请确保电脑上已经正确安装Python。随后，将文件中的<em>directory</em>变量改为你存放.csv的目录。</li>
+<li>运行csvToKgl.py，得到所有的.kgl文件。</li>
+<li>进入<a href="http://music.163.com/#/import/kugou" target="_blank" rel="noopener">导入酷狗歌单页面</a>依次上传.kgl文件。</li>
+</ol>
+<p>######优点</p>
+<ul>
+<li>可以同时转换多个歌单</li>
+</ul>
+<p>######可能遇到的问题</p>
+<ul>
+<li>当歌单中存在过多网易未收录的歌曲，可能会导致上传失败。</li>
+</ul>
+<hr>
+<h2 id="如何将网易云音乐歌单导入Spotify？"><a href="#如何将网易云音乐歌单导入Spotify？" class="headerlink" title="如何将网易云音乐歌单导入Spotify？"></a>如何将网易云音乐歌单导入Spotify？</h2><p>网上似乎没有太多关于这个需求的解决方法，我找到的<a href="https://sspai.com/post/36542" target="_blank" rel="noopener">唯一一个</a>是利用网易提供的 API 得到歌单列表的JSON文件，再使用 workflow + IFTTT 曲线救国的方法，不仅不直观，而且要在手机上多次下载软件、多次授权之后才能进行操作，我跟着原文的方式尝试了一遍之后，依然没有在spotify中看到导入的歌单……所以被逼无奈才又写了几行代码实现的。(可能是滞后的原因，第二天早上看到了添加的歌单)</p>
+<h6 id="一种新方法"><a href="#一种新方法" class="headerlink" title="一种新方法"></a>一种新方法</h6><p>由于网易云提供的API不定期犯抽，于是利用dongyonghui写的API完成了新的方法，点击<a href="www.dongyonghui.com/default/20180128-网易云、酷狗、QQ音乐歌单接口API.html">这里</a>查看该API的说明。</p>
+<h6 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h6><p>Richard完成了一个Web实现（<a href="https://yyrcd.com/2018/11/14/n2s-zh/），我也类似地用GitHub" target="_blank" rel="noopener">https://yyrcd.com/2018/11/14/n2s-zh/），我也类似地用GitHub</a> page做了一个，支持网易云音乐和QQ音乐，可以方便的直接在网页操作，更加直观和简单：<a href="https://bjason.github.io/163MusicToSpotify/">https://bjason.github.io/163MusicToSpotify/</a></p>
+<p>如果已经按照上面的网页操作，那么就不用麻烦地跟随下面的步骤走了。</p>
+<ol>
+<li>得到歌单ID：从浏览器进入到你的歌单，复制地址栏中”music.163.com/#/playlist?id=”后面的数字。</li>
+<li>进入到<a href="https://github.com/bjason/163MusicToSpotify" target="_blank" rel="noopener">这个页面</a>下载相应的Python文件，请确保电脑上已经正确安装Python。如果电脑上安装了Python2，请下载<a href="https://github.com/bjason/163MusicToSpotify/blob/master/AlternativeMethodForPy2.py" target="_blank" rel="noopener">AlternativeMethodForPy2.py</a>，Python3则下载AlternativeMethodForPy3.py。如果想尝试之前的方法，请下载Python2.py或Python3.py。</li>
+<li>运行文件并输入你刚刚获得的歌单ID，看到成功提示后在相同目录下可以看到一个以歌单ID命名的.txt文件。</li>
+<li>打开<a href="http://spotlistr.herokuapp.com/#/search/textbox" target="_blank" rel="noopener">这个网站</a>并粘贴.txt中的全部内容，等待其自动识别并创建歌单。</li>
+</ol>
+<h6 id="优点"><a href="#优点" class="headerlink" title="优点"></a>优点</h6><ul>
+<li>相比<a href="https://sspai.com/post/36542" target="_blank" rel="noopener">小众软件的方法</a>简单、成功率高</li>
+</ul>
+<h6 id="可能遇到的问题"><a href="#可能遇到的问题" class="headerlink" title="可能遇到的问题"></a>可能遇到的问题</h6><ul>
+<li>网易云API只返回歌单中最多1000首歌曲的信息。</li>
+<li>由于版权原因，部分歌曲spotify不能添加。</li>
+</ul>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/%E9%9F%B3%E4%B9%90/" rel="tag"># 音乐</a>
+          
+            <a href="/tags/%E6%95%99%E7%A8%8B/" rel="tag"># 教程</a>
+          
+            <a href="/tags/%E6%96%87%E6%A1%A3/" rel="tag"># 文档</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/06/02/PerfectPlace%E4%B9%90%E8%AF%84/" rel="next" title="翻译 Pitchfork Best New Track Perfect Places - Lorde">
+                <i class="fa fa-chevron-left"></i> 翻译 Pitchfork Best New Track Perfect Places - Lorde
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/05/23/%E8%8B%B1%E9%9B%84/" rel="prev" title="<p style="font-size:180px;line-height:100%;">英雄</p>">
+                <p style="font-size:180px;line-height:100%;">英雄</p> <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">Jason Lei</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives">
+              
+                  <span class="site-state-item-count">13</span>
+                  <span class="site-state-item-name">posts</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-name">categories</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">10</span>
+                  <span class="site-state-item-name">tags</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#如何将网易云音乐歌单导入Spotify？"><span class="nav-number">1.</span> <span class="nav-text">如何将网易云音乐歌单导入Spotify？</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#一种新方法"><span class="nav-number">1.0.0.0.1.</span> <span class="nav-text">一种新方法</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#步骤"><span class="nav-number">1.0.0.0.2.</span> <span class="nav-text">步骤</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#优点"><span class="nav-number">1.0.0.0.3.</span> <span class="nav-text">优点</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#可能遇到的问题"><span class="nav-number">1.0.0.0.4.</span> <span class="nav-text">可能遇到的问题</span></a></li></ol></li></ol></li></ol></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Jason Lei</span>
+
+  
+</div>
+
+
+  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Muse</a></div>
+
+
+
+  <div class="footer-custom">Visit me at <a href="https://bjason.github.com" target="_blank" rel="noopener">GitHub</a> <a href="https://www.douban.com/people/Billei/" target="_blank" rel="noopener">豆瓣</a> <a href="https://www.weibo.com/leiyuchu/" target="_blank" rel="noopener">微博</a> <a href="https://vsco.co/billei/gallery" target="_blank" rel="noopener">VSCO</a> <a href="https://www.instagram.com/_bjsn/" target="_blank" rel="noopener">Instagram</a> <a href="https://www.last.fm/user/BilleiJason" target="_blank" rel="noopener">Last.fm</a> <a href="https://open.spotify.com/user/22bbslwmudhmf5g4clsondfbi?si=ZSDSaAdYQ8yclrZ1LTE2iA" target="_blank" rel="noopener">Spotify</a> <a href="https://www.jianshu.com/u/129a345ca11b" target="_blank" rel="noopener">简书</a></div>
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
