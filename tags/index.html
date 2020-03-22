@@ -66,8 +66,6 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
-
 
 
 
@@ -95,7 +93,7 @@
     root: '/',
     scheme: 'Muse',
     version: '5.1.4',
-    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":true},
     fancybox: true,
     tabs: true,
     motion: {"enable":false,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
@@ -263,10 +261,10 @@
         
           <div class="tag-cloud">
             <div class="tag-cloud-title">
-                10 tags in total
+                11 tags in total
             </div>
             <div class="tag-cloud-tags">
-              <a href="/tags/%E4%B9%90%E8%AF%84/" style="font-size: 30px; color: #111">乐评</a> <a href="/tags/%E5%88%9B%E4%BD%9C/" style="font-size: 26.4px; color: #363636">创作</a> <a href="/tags/%E5%B0%8F%E8%AF%B4/" style="font-size: 12px; color: #ccc">小说</a> <a href="/tags/%E6%91%84%E5%BD%B1/" style="font-size: 12px; color: #ccc">摄影</a> <a href="/tags/%E6%95%99%E7%A8%8B/" style="font-size: 15.6px; color: #a7a7a7">教程</a> <a href="/tags/%E6%95%A3%E6%96%87/" style="font-size: 15.6px; color: #a7a7a7">散文</a> <a href="/tags/%E6%96%87%E6%A1%A3/" style="font-size: 12px; color: #ccc">文档</a> <a href="/tags/%E7%BF%BB%E8%AF%91/" style="font-size: 22.8px; color: #5c5c5c">翻译</a> <a href="/tags/%E8%AF%84%E8%AE%BA/" style="font-size: 12px; color: #ccc">评论</a> <a href="/tags/%E9%9F%B3%E4%B9%90/" style="font-size: 19.2px; color: #818181">音乐</a>
+              <a href="/tags/IT%E8%AF%84%E8%AE%BA/" style="font-size: 30px; color: #111">IT评论</a> <a href="/tags/%E4%B9%90%E8%AF%84/" style="font-size: 27px; color: #303030">乐评</a> <a href="/tags/%E5%88%9B%E4%BD%9C/" style="font-size: 24px; color: #4f4f4f">创作</a> <a href="/tags/%E5%B0%8F%E8%AF%B4/" style="font-size: 12px; color: #ccc">小说</a> <a href="/tags/%E6%91%84%E5%BD%B1/" style="font-size: 12px; color: #ccc">摄影</a> <a href="/tags/%E6%95%99%E7%A8%8B/" style="font-size: 15px; color: #adadad">教程</a> <a href="/tags/%E6%95%A3%E6%96%87/" style="font-size: 15px; color: #adadad">散文</a> <a href="/tags/%E6%96%87%E6%A1%A3/" style="font-size: 12px; color: #ccc">文档</a> <a href="/tags/%E7%BF%BB%E8%AF%91/" style="font-size: 21px; color: #6f6f6f">翻译</a> <a href="/tags/%E8%AF%84%E8%AE%BA/" style="font-size: 12px; color: #ccc">评论</a> <a href="/tags/%E9%9F%B3%E4%B9%90/" style="font-size: 18px; color: #8e8e8e">音乐</a>
             </div>
           </div>
         
@@ -305,6 +303,8 @@
 
   <aside id="sidebar" class="sidebar">
     
+      <div id="sidebar-dimmer"></div>
+    
     <div class="sidebar-inner">
 
       
@@ -326,7 +326,7 @@
               
                 <a href="/archives">
               
-                  <span class="site-state-item-count">13</span>
+                  <span class="site-state-item-count">24</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
@@ -348,7 +348,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">10</span>
+                  <span class="site-state-item-count">11</span>
                   <span class="site-state-item-name">tags</span>
                 </a>
               </div>
@@ -564,6 +564,31 @@
   
 
   
+  
+  
+  <link rel="stylesheet" href="/lib/needsharebutton/needsharebutton.css">
+
+  
+  
+  <script src="/lib/needsharebutton/needsharebutton.js"></script>
+
+  <script>
+    
+      pbOptions = {};
+      
+          pbOptions.iconStyle = "default";
+      
+          pbOptions.boxForm = "horizontal";
+      
+          pbOptions.position = "bottomCenter";
+      
+          pbOptions.networks = "Weibo,Wechat,Douban,QQZone,Twitter,Facebook";
+      
+      new needShareButton('#needsharebutton-postbottom', pbOptions);
+    
+    
+  </script>
+
   
 
   

@@ -102,7 +102,7 @@
     root: '/',
     scheme: 'Muse',
     version: '5.1.4',
-    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":true},
     fancybox: true,
     tabs: true,
     motion: {"enable":false,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
@@ -418,14 +418,29 @@
 
       
       
+        <div class="post-widgets">
+        
+
+        
+
+        
+          
+          <div id="needsharebutton-postbottom">
+            <span class="btn">
+              <i class="fa fa-share-alt" aria-hidden="true"></i>
+            </span>
+          </div>
+        
+        </div>
+      
       
 
       
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/06/02/PerfectPlace%E4%B9%90%E8%AF%84/" rel="next" title="翻译 Pitchfork Best New Track Perfect Places - Lorde">
-                <i class="fa fa-chevron-left"></i> 翻译 Pitchfork Best New Track Perfect Places - Lorde
+              <a href="/2019/05/23/%E8%8B%B1%E9%9B%84/" rel="prev" title="<p style="font-size:180px;line-height:100%;">英雄</p>">
+                <i class="fa fa-chevron-left"></i> <p style="font-size:180px;line-height:100%;">英雄</p>
               </a>
             
           </div>
@@ -434,8 +449,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2019/05/23/%E8%8B%B1%E9%9B%84/" rel="prev" title="<p style="font-size:180px;line-height:100%;">英雄</p>">
-                <p style="font-size:180px;line-height:100%;">英雄</p> <i class="fa fa-chevron-right"></i>
+              <a href="/2017/06/02/PerfectPlace%E4%B9%90%E8%AF%84/" rel="next" title="翻译 Pitchfork Best New Track Perfect Places - Lorde">
+                翻译 Pitchfork Best New Track Perfect Places - Lorde <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -483,6 +498,8 @@
 
   <aside id="sidebar" class="sidebar">
     
+      <div id="sidebar-dimmer"></div>
+    
     <div class="sidebar-inner">
 
       
@@ -513,7 +530,7 @@
               
                 <a href="/archives">
               
-                  <span class="site-state-item-count">13</span>
+                  <span class="site-state-item-count">24</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
@@ -535,7 +552,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">10</span>
+                  <span class="site-state-item-count">11</span>
                   <span class="site-state-item-name">tags</span>
                 </a>
               </div>
@@ -767,6 +784,31 @@
   
 
   
+  
+  
+  <link rel="stylesheet" href="/lib/needsharebutton/needsharebutton.css">
+
+  
+  
+  <script src="/lib/needsharebutton/needsharebutton.js"></script>
+
+  <script>
+    
+      pbOptions = {};
+      
+          pbOptions.iconStyle = "default";
+      
+          pbOptions.boxForm = "horizontal";
+      
+          pbOptions.position = "bottomCenter";
+      
+          pbOptions.networks = "Weibo,Wechat,Douban,QQZone,Twitter,Facebook";
+      
+      new needShareButton('#needsharebutton-postbottom', pbOptions);
+    
+    
+  </script>
+
   
 
   

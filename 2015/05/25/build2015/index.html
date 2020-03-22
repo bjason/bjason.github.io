@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+
+
+
+
+<html class="theme-next muse" lang="zh-CN">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+<link href="https://fonts.googleapis.com/css?family=Noto+Serif+SC:400,500,700,900&display=swap&subset=chinese-simplified" rel="stylesheet">
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="IT评论," />
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="每一次你上传一张朋友的照片来测试他的年龄，你就参与了一次从本地到云端API的数据大交流。How-old.net,这个在4月28日在Build 2015大会第一天展示的，利用微软开放的Azure API实现的小玩具，展现了Microsoft Azure的无限可能——譬如早先宣布的Windows Hello面部识别系统，以及开发者接入后，可能进行的各种探索。这让Build 2015开发者大会的学术气质">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Build 2015：十亿分之一的你我他">
+<meta property="og:url" content="https://bjason.github.io/2015/05/25/build2015/index.html">
+<meta property="og:site_name">
+<meta property="og:description" content="每一次你上传一张朋友的照片来测试他的年龄，你就参与了一次从本地到云端API的数据大交流。How-old.net,这个在4月28日在Build 2015大会第一天展示的，利用微软开放的Azure API实现的小玩具，展现了Microsoft Azure的无限可能——譬如早先宣布的Windows Hello面部识别系统，以及开发者接入后，可能进行的各种探索。这让Build 2015开发者大会的学术气质">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2015-05-25T15:14:07.000Z">
+<meta property="article:modified_time" content="2020-03-21T23:08:44.470Z">
+<meta property="article:author" content="Jason Lei">
+<meta property="article:tag" content="IT评论">
+<meta name="twitter:card" content="summary">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":true},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":false,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: 'Author'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="https://bjason.github.io/2015/05/25/build2015/"/>
+
+
+
+
+
+  <title>Build 2015：十亿分之一的你我他 | </title>
+  
+
+
+
+
+
+
+
+
+<meta name="generator" content="Hexo 4.2.0"></head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title"></span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+            Home
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+            Tags
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+            Categories
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-projects">
+          <a href="/projects" rel="section">
+            
+            Projects
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-gallery">
+          <a href="/gallery" rel="section">
+            
+            Gallery
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-map">
+          <a href="/Map" rel="section">
+            
+            Map
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://bjason.github.io/2015/05/25/build2015/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Jason Lei">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">Build 2015：十亿分之一的你我他</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2015-05-25T08:14:07-07:00">
+                2015-05-25
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E6%96%87%E5%AD%97/" itemprop="url" rel="index">
+                    <span itemprop="name">文字</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>每一次你上传一张朋友的照片来测试他的年龄，你就参与了一次从本地到云端API的数据大交流。How-old.net,这个在4月28日在Build 2015大会第一天展示的，利用微软开放的Azure API实现的小玩具，展现了Microsoft Azure的无限可能——譬如早先宣布的Windows Hello面部识别系统，以及开发者接入后，可能进行的各种探索。这让Build 2015开发者大会的学术气质，变得富有乐趣了起来。</p>
+<a id="more"></a>
+
+<p>如果说去年十月微软低调发布Windows 10 只是一次热身的话，那么Build 2015大会就是真正的强势回归了。时隔半年再去回顾那场小型发布会，发布会上的许多演讲词如今都有了更为宏大的意义。譬如一句玩笑话的Windows One，实则昭示了微软的野心——Build 2015大会表达了对iOS和安卓应用的欢迎，这说明Windows 10不仅仅是对所有Windows平台的统一，更是对所有平台的大一统。这样的例子还有微软执行副总裁特里·迈尔森的话语：“Windows 10带来的变化非常之大，它是微软的下一个篇章。”如今看来，这个下一个篇章的宏图已昭然若揭，Windows将进化成新的质态——它不再是个产品，而是个服务，横跨于产品之上，成为”万物互联“的核心。</p>
+<p>2015年4月29日至5月1日，微软在旧金山马士孔尼中心召开了Build 2015大会，会上发布了全新的开发者工具，帮助他们更方便的将iOS和安卓应用转为Windows通用应用，为Office提供了平台级别的扩展性，告别了昔日的浏览器程序IE，公布了Project Spartan的正式名字Microsoft Edge，并将通用应用扩展到了HoloLens之上。</p>
+<p>微软当前面临的最大问题，是微软占据统治地位的PC端正在不断萎靡，而发展迅猛的移动端微软却声微势弱，微软逐渐走进了边缘化。为改变被动状态而祭出了Windows Phone和Windows 8，本以为能奋起直追苹果、谷歌，至少与之形成三足鼎立之势。但由于Windows 8过于激进的改变，并不受人待见。而Windows Phone生态痼疾的恶性循环，其至今仍然处于弱势地位。Windows 10成为了微软走下去的最后一张船票。</p>
+<p>Windows 10的答卷是，让安卓、iOS的应用回流至Windows。这次，微软对开发者友好得令人惊讶，Build大会上微软发布了将免费提供给开发者的Visual Studio Code，覆盖OSX和Linux平台。Android开发者可以方便地重用他们的代码，以将其移植到Windows 10上。为了实现这一点，Windows Phones甚至将包含一个Android子系统。至于iOS开发者，则可以使用VS在Windows 10 PC上调试他们的游戏和应用，Xcode工程也可以十分方便地移植。这恰恰解释了为何微软在Windows 10发布后放弃了耕耘许久的Modern设计规范，转而拾起安卓阵营的汉堡包菜单等元素。这也是为了降低未来其他平台应用的移植难度。此外，微软在应用平台方面的统一还包括，Win32和.NET应用可以进入Windows Store，基于网页版开发的微软应用也能快速转化为Universal Windows app，进驻应用商店。</p>
+<p>对用户来说，它极大的扩展了Windows的应用生态边界，培育用户对微软应用的使用习惯，使核心应用成为平台级产品。</p>
+<p>操作系统级别的终极理想或许就是大一统了。苹果和谷歌走得不太顺畅，自从iPhone 5S用上了A7的64位处理器后，用户开始翘首OS X和iOS的合并，虽然早有continuity的协助让iOS与OS X的距离近了一些，然而大多数只是用户界面的隔靴搔痒。Google的PC端做着云端梦，多年过去，Chrome终于能运行安卓应用了，但也仅是畏手畏脚地动动皮毛。其他的系统也在从另外的途径来实现这个理想，譬如小米的MIUI，再譬如前几年众筹失败的Ubuntu edge项目——它是个桌面和移动端通用的手机，插上屏幕就是台式机。Windows 10的大一统可谓是最彻底的，在前者的视角上，从核心代码到应用商店进行了合并，还有一直被新微软奉为圭臬的”移动为先云为先“的核心产品Azure的整合；而在后者的视角上，也有continuum这个解决方案。</p>
+<p>Continuum是个很有想象力的功能，通过continuum，手机屏幕可以投射到大屏幕的设备上，利用通用应用的优势，如果外接显示屏甚至可以充当PC。除了在商务人士中解决了多台设备需要同时携带的烦恼以外，微软也期待用Continuum技术在广大发展中国家普及PC，在发展落后地区，Windows设备只需一个显示器，就能化身主机。也就是说，微软出其不意地和一直宣扬要”占领下一个十亿人“的谷歌打了一架。相比起谷歌的努力控制成本的Android One来说，或许微软这种隐性的方式更为明智，因为Windows 10对硬件的要求很低，所有性能够用的android手机通过Windows 10的continuum都有转换成Windows电脑的潜力。</p>
+<p>Build 2015大会上还展示了HoloLens的新特性。首先，微软表示Windows 10上搭载的“universal apps”也将被融入到HoloLens的应用中。随后，微软在会上用一个小机器人演示了HoloLens的更多可能性，比如加入全息技术与现实场景的整合。微软给Hololens设定了无数实际、可操作的应用场景。包括教育、设计、医疗等各个领域，它的应用前景广泛。现在看来，许多微软莫名其妙的项目都和它有着密切的关系，Cortana的语音识别和语义理解，Kinect的手势识别，收购MINECRAFT，进行Windows 10的跨硬件平台和通用应用。它能力之强大，使之缺乏了真正意义上的竞争对手——HoloLens的科幻程度让人质疑它的真实性。现如今，”改变世界“已经成为了一句太平凡的话语，HoloLens的亮相让人感觉是大哥大时代的iPhone 4，它的出现就已经改变世界了。微软希望它能取代现有的一切设备，包括手机、PC、智能配件等等。通过现场的演示来看，这个目标尚不遥远，如今的问题或许不是能不能达成目标，而是敢不敢做。</p>
+<p>所谓塞翁失马焉知非福，若非微软的一朝失策，现今也绝不可能掀起这场自上而下的自我改革。人们嘲笑着这个昔日巨头今日沦为百分之一的窘境，可微软展示了一家科技公司真正该有的样子。</p>
+<p>微软在开发者大会上对Windows</p>
+<p>10的前景做出了预测，这个几乎可以运行在任何设备上的平台，将在两到三年内覆盖10亿台设备。这个预测是保守还是乐观无人知晓，因为人类历史上，还未曾出现过如此壮观的大一统现象。</p>
+<p>或许未来，你我都将是这十亿分之一。</p>
+<p>BGM</p>
+<p>#1 On My Balcony– Flunk</p>
+<p>#2 True Faith (’94version)– New Order</p>
+<p>#3 Sun Goes Down– Robin Schulz</p>
+<p>#4 How You GetThis Girl – Taylor Swift</p>
+<p>#5 Poison – Waxahachee</p>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/IT%E8%AF%84%E8%AE%BA/" rel="tag"># IT评论</a>
+          
+        </div>
+      
+
+      
+      
+        <div class="post-widgets">
+        
+
+        
+
+        
+          
+          <div id="needsharebutton-postbottom">
+            <span class="btn">
+              <i class="fa fa-share-alt" aria-hidden="true"></i>
+            </span>
+          </div>
+        
+        </div>
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2015/05/25/htc/" rel="prev" title="HTC发布会：摸不着头脑的观众和HTC自己">
+                <i class="fa fa-chevron-left"></i> HTC发布会：摸不着头脑的观众和HTC自己
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2015/05/25/surface3/" rel="next" title="Spotify与星巴克合作：音乐圈的大事 而不是咖啡圈的">
+                Spotify与星巴克合作：音乐圈的大事 而不是咖啡圈的 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+      <div id="sidebar-dimmer"></div>
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">Jason Lei</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives">
+              
+                  <span class="site-state-item-count">24</span>
+                  <span class="site-state-item-name">posts</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-name">categories</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">11</span>
+                  <span class="site-state-item-name">tags</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Jason Lei</span>
+
+  
+</div>
+
+
+  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Muse</a></div>
+
+
+
+  <div class="footer-custom">Visit me at <a href="https://bjason.github.com" target="_blank" rel="noopener">GitHub</a> <a href="https://www.douban.com/people/Billei/" target="_blank" rel="noopener">豆瓣</a> <a href="https://www.weibo.com/leiyuchu/" target="_blank" rel="noopener">微博</a> <a href="https://vsco.co/billei/gallery" target="_blank" rel="noopener">VSCO</a> <a href="https://www.instagram.com/_bjsn/" target="_blank" rel="noopener">Instagram</a> <a href="https://www.last.fm/user/BilleiJason" target="_blank" rel="noopener">Last.fm</a> <a href="https://open.spotify.com/user/22bbslwmudhmf5g4clsondfbi?si=ZSDSaAdYQ8yclrZ1LTE2iA" target="_blank" rel="noopener">Spotify</a> <a href="https://www.jianshu.com/u/129a345ca11b" target="_blank" rel="noopener">简书</a></div>
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+  
+  <link rel="stylesheet" href="/lib/needsharebutton/needsharebutton.css">
+
+  
+  
+  <script src="/lib/needsharebutton/needsharebutton.js"></script>
+
+  <script>
+    
+      pbOptions = {};
+      
+          pbOptions.iconStyle = "default";
+      
+          pbOptions.boxForm = "horizontal";
+      
+          pbOptions.position = "bottomCenter";
+      
+          pbOptions.networks = "Weibo,Wechat,Douban,QQZone,Twitter,Facebook";
+      
+      new needShareButton('#needsharebutton-postbottom', pbOptions);
+    
+    
+  </script>
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>

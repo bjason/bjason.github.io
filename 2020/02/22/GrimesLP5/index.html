@@ -99,7 +99,7 @@
     root: '/',
     scheme: 'Muse',
     version: '5.1.4',
-    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":true},
     fancybox: true,
     tabs: true,
     motion: {"enable":false,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
@@ -394,14 +394,29 @@
 
       
       
+        <div class="post-widgets">
+        
+
+        
+
+        
+          
+          <div id="needsharebutton-postbottom">
+            <span class="btn">
+              <i class="fa fa-share-alt" aria-hidden="true"></i>
+            </span>
+          </div>
+        
+        </div>
+      
       
 
       
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2020/02/16/TameImpalaSlowRush/" rel="next" title="Pitchfork乐评翻译 Tame Impala - The Slow Rush">
-                <i class="fa fa-chevron-left"></i> Pitchfork乐评翻译 Tame Impala - The Slow Rush
+              <a href="/2020/02/28/friends%E6%98%AF%E5%A6%82%E4%BD%95%E5%88%9B%E9%80%A0%E8%8B%A6%E4%B9%90%E5%8F%82%E5%8D%8A%E7%9A%84%E5%90%AC%E6%84%9F%E7%9A%84/" rel="prev" title="All My Friends是如何创造苦乐参半的听感的">
+                <i class="fa fa-chevron-left"></i> All My Friends是如何创造苦乐参半的听感的
               </a>
             
           </div>
@@ -410,8 +425,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2020/02/28/friends%E6%98%AF%E5%A6%82%E4%BD%95%E5%88%9B%E9%80%A0%E8%8B%A6%E4%B9%90%E5%8F%82%E5%8D%8A%E7%9A%84%E5%90%AC%E6%84%9F%E7%9A%84/" rel="prev" title="All My Friends是如何创造苦乐参半的听感的">
-                All My Friends是如何创造苦乐参半的听感的 <i class="fa fa-chevron-right"></i>
+              <a href="/2020/02/16/TameImpalaSlowRush/" rel="next" title="Pitchfork乐评翻译 Tame Impala - The Slow Rush">
+                Pitchfork乐评翻译 Tame Impala - The Slow Rush <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -459,6 +474,8 @@
 
   <aside id="sidebar" class="sidebar">
     
+      <div id="sidebar-dimmer"></div>
+    
     <div class="sidebar-inner">
 
       
@@ -480,7 +497,7 @@
               
                 <a href="/archives">
               
-                  <span class="site-state-item-count">13</span>
+                  <span class="site-state-item-count">24</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
@@ -502,7 +519,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">10</span>
+                  <span class="site-state-item-count">11</span>
                   <span class="site-state-item-name">tags</span>
                 </a>
               </div>
@@ -718,6 +735,31 @@
   
 
   
+  
+  
+  <link rel="stylesheet" href="/lib/needsharebutton/needsharebutton.css">
+
+  
+  
+  <script src="/lib/needsharebutton/needsharebutton.js"></script>
+
+  <script>
+    
+      pbOptions = {};
+      
+          pbOptions.iconStyle = "default";
+      
+          pbOptions.boxForm = "horizontal";
+      
+          pbOptions.position = "bottomCenter";
+      
+          pbOptions.networks = "Weibo,Wechat,Douban,QQZone,Twitter,Facebook";
+      
+      new needShareButton('#needsharebutton-postbottom', pbOptions);
+    
+    
+  </script>
+
   
 
   
