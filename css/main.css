@@ -1858,7 +1858,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #cb33af;
+  background: #ff3cff;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2747,8 +2747,8 @@ embed {
 }
 .signature-svg {
   display: inline-block;
-  width: 100px;
-  height: 100px;
+  width: 120px;
+  height: 120px;
   background-size: cover;
   background-image: url("/img/signature.svg");
 }
@@ -2757,4 +2757,63 @@ embed {
   bottom: 10px;
   right: 40px;
   display: none;
+}
+.sidebar-signature:hover,
+.sidebar-signature:focus {
+  filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%);
+}
+.gradient:hover,
+.post-body p a:hover {
+  color: hotPink;
+}
+@media (-webkit-min-device-pixel-ratio: 0) {
+  .gradient {
+    background-color: blank;
+    background-image: -webkit-linear-gradient(left, hotPink 0%, #ffa500 50%, transparent 50%);
+    background-position: 100% 0;
+    background-size: 200% 200%;
+    color: transparent;
+    -webkit-transition: 0.1s 0.2s;
+  }
+  .gradient:hover {
+    background-position: 0 0;
+    color: transparent;
+    transition: 0.2s 0;
+  }
+}
+.post-body p a {
+  border-bottom: 1px solid #f00;
+  transition: border-bottom 0.4s linear;
+}
+.post-body p a:hover {
+  border-bottom: 0px;
+}
+.post-body p a,
+.post-category a,
+.post-tags a,
+.footer-custom a {
+  transition: 0.2s;
+}
+@media (-webkit-min-device-pixel-ratio: 0) {
+  .post-body p a,
+  .post-category a,
+  .post-tags a,
+  .footer-custom a {
+    background-color: #555;
+    background-image: -webkit-linear-gradient(left, hotPink 0%, #ffa500 50%, transparent 50%);
+    background-position: 100% 0;
+    background-size: 200% 200%;
+    color: transparent;
+    text-decoration: none;
+    -webkit-transition: 0.1s 0.2s;
+    -webkit-background-clip: text;
+  }
+  .post-body p a:hover,
+  .post-category a:hover,
+  .post-tags a:hover,
+  .footer-custom a:hover {
+    background-position: 0 0;
+    color: transparent;
+    transition: 0.4s 0;
+  }
 }
