@@ -1,0 +1,885 @@
+<!DOCTYPE html>
+
+
+
+
+<html class="theme-next muse" lang="zh-CN">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+  
+  
+    
+    
+  <script src="/lib/pace/pace.min.js?v=1.0.2"></script>
+  <link href="/lib/pace/pace-theme-minimal.min.css?v=1.0.2" rel="stylesheet">
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+<link href="https://fonts.googleapis.com/css?family=Noto+Serif+SC:400,500,700,900&display=swap&subset=chinese-simplified" rel="stylesheet">
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/safari-pinned-tab.svg?v=5.1.4" color="#222">
+
+
+
+  <meta name="msapplication-config" content="/images/browserconfig.xml" />
+
+
+
+  <meta name="keywords" content="教程,Word," />
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="曾经以为用Word输入公式是一件非常困难且丑陋的事情，如果用Surface等手写笔系列的产品，使用Ink to Math工具可以直接手写输入，但如果没有触屏那就变成了一件很难的事情。如果不懂得技巧，可能只会像我原来利用上标（Ctrl+Shift+&#x3D;）下标（Ctrl+&#x3D;）输入的公式一样丑陋：  最近发现使用Word中自带的“公式工具”可以非常迅速和美观的输入公式，并且支持类似Latex格式的">
+<meta property="og:type" content="article">
+<meta property="og:title" content="用Word输入公式最方便美观的方法，跟Latex有一拼，附快捷对照表">
+<meta property="og:url" content="https://bjason.github.io/2017/12/08/%E7%94%A8Word%E8%BE%93%E5%85%A5%E5%85%AC%E5%BC%8F%E6%9C%80%E6%96%B9%E4%BE%BF%E7%BE%8E%E8%A7%82%E7%9A%84%E6%96%B9%E6%B3%95%EF%BC%8C%E8%B7%9FLatex%E6%9C%89%E4%B8%80%E6%8B%BC%EF%BC%8C%E9%99%84%E5%BF%AB%E6%8D%B7%E5%AF%B9%E7%85%A7%E8%A1%A8/index.html">
+<meta property="og:site_name">
+<meta property="og:description" content="曾经以为用Word输入公式是一件非常困难且丑陋的事情，如果用Surface等手写笔系列的产品，使用Ink to Math工具可以直接手写输入，但如果没有触屏那就变成了一件很难的事情。如果不懂得技巧，可能只会像我原来利用上标（Ctrl+Shift+&#x3D;）下标（Ctrl+&#x3D;）输入的公式一样丑陋：  最近发现使用Word中自带的“公式工具”可以非常迅速和美观的输入公式，并且支持类似Latex格式的">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/25254-aa7675e4a6b89f7f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/25254-102c4741cbae3b13.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/25254-ac1dd40682379486.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/25254-927ef03e433154bc.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="article:published_time" content="2017-12-08T22:03:34.000Z">
+<meta property="article:modified_time" content="2020-03-25T06:21:00.077Z">
+<meta property="article:author" content="Jason Lei">
+<meta property="article:tag" content="教程">
+<meta property="article:tag" content="Word">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://upload-images.jianshu.io/upload_images/25254-aa7675e4a6b89f7f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"hide","offset":12,"b2t":false,"scrollpercent":false,"onmobile":true},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":false,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: 'Author'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="https://bjason.github.io/2017/12/08/用Word输入公式最方便美观的方法，跟Latex有一拼，附快捷对照表/"/>
+
+
+
+
+
+  <title>用Word输入公式最方便美观的方法，跟Latex有一拼，附快捷对照表 | </title>
+  
+
+
+
+
+
+
+
+
+<meta name="generator" content="Hexo 4.2.0"></head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title"></span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+            Home
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+            Tags
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+            Categories
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-projects">
+          <a href="/projects" rel="section">
+            
+            Projects
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-gallery">
+          <a href="/gallery" rel="section">
+            
+            Gallery
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-map">
+          <a href="/Map" rel="section">
+            
+            Map
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://bjason.github.io/2017/12/08/%E7%94%A8Word%E8%BE%93%E5%85%A5%E5%85%AC%E5%BC%8F%E6%9C%80%E6%96%B9%E4%BE%BF%E7%BE%8E%E8%A7%82%E7%9A%84%E6%96%B9%E6%B3%95%EF%BC%8C%E8%B7%9FLatex%E6%9C%89%E4%B8%80%E6%8B%BC%EF%BC%8C%E9%99%84%E5%BF%AB%E6%8D%B7%E5%AF%B9%E7%85%A7%E8%A1%A8/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Jason Lei">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/android-chrome-192x192.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">用Word输入公式最方便美观的方法，跟Latex有一拼，附快捷对照表</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-12-08T14:03:34-08:00">
+                2017-12-08
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E6%95%99%E7%A8%8B/" itemprop="url" rel="index">
+                    <span itemprop="name">教程</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <a id="more"></a>
+
+
+
+<p>曾经以为用Word输入公式是一件非常困难且丑陋的事情，如果用Surface等手写笔系列的产品，使用Ink to Math工具可以直接手写输入，但如果没有触屏那就变成了一件很难的事情。如果不懂得技巧，可能只会像我原来利用上标（Ctrl+Shift+=）下标（Ctrl+=）输入的公式一样丑陋：</p>
+<p><img src="https://upload-images.jianshu.io/upload_images/25254-aa7675e4a6b89f7f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="不使用公式工具"></p>
+<p>最近发现使用Word中自带的“公式工具”可以非常迅速和美观的输入公式，并且支持类似Latex格式的语法和希腊字母的输入，如果使用Wolframe等工具可以很方便的直接将公式粘贴到Word中：</p>
+<p><img src="https://upload-images.jianshu.io/upload_images/25254-102c4741cbae3b13.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="方便的输入希腊字母、下标、幂和求和公式"></p>
+<p>熟练之后，这套方法也能在OneNote中使用！方法完全类似。然而我发现中文互联网似乎没有关于该工具的教程，下面以Office 365为例展示如何使用该工具。</p>
+<hr>
+<ol>
+<li>开启“公式工具”。菜单栏-插入-公式，或使用快捷键Alt+=，旋即会出现“在此输入公式”的候选框：</li>
+</ol>
+<p><img src="https://upload-images.jianshu.io/upload_images/25254-ac1dd40682379486.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="候选框"></p>
+<ol start="2">
+<li>键入公式。常规输入直接键入字母和数字即可，特殊符号和字母可以在菜单栏选中输入：</li>
+</ol>
+<p><img src="https://upload-images.jianshu.io/upload_images/25254-927ef03e433154bc.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<ol start="3">
+<li>如果想要更高的速度，可以使用不同的语法，在菜单栏选中。Latex语法不再细讲，Unicode需要记住一些语法，如/代表分数，而希腊字母、特殊符号等需要使用反斜杠工具（Enter键上方的反斜杠\）再输入名称，如θ直接输入\theta再按空格即可。</li>
+</ol>
+<p>所有的数学符号都是通过两部输入的：</p>
+<p>a. 先输入一个代表该符号的一串字符串，通常以\开头</p>
+<p>b. 按空格激活它</p>
+<p>比如要输入x<sup>4</sup>，先输入x^4，然后按个空格即可。</p>
+<p>一些基本的公式输入可以参考下表，如果记住这个表格则大部分公式就没有问题了：</p>
+<table>
+<thead>
+<tr>
+<th align="center">数学符号名称</th>
+<th>输入字符</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">分数</td>
+<td>/</td>
+</tr>
+<tr>
+<td align="center">幂</td>
+<td>^</td>
+</tr>
+<tr>
+<td align="center">下标</td>
+<td>_</td>
+</tr>
+<tr>
+<td align="center">大于等于（同理小于等于）</td>
+<td>&gt;=</td>
+</tr>
+<tr>
+<td align="center">箭头</td>
+<td>-&gt;</td>
+</tr>
+<tr>
+<td align="center">公式末尾编号</td>
+<td>#</td>
+</tr>
+<tr>
+<td align="center">极限</td>
+<td>lim_</td>
+</tr>
+<tr>
+<td align="center">小写希腊字母</td>
+<td>\theta</td>
+</tr>
+<tr>
+<td align="center">大写希腊字母</td>
+<td>\Theta</td>
+</tr>
+<tr>
+<td align="center">乘号</td>
+<td>\times</td>
+</tr>
+<tr>
+<td align="center">除号</td>
+<td>\div</td>
+</tr>
+<tr>
+<td align="center">无穷</td>
+<td>\infty</td>
+</tr>
+<tr>
+<td align="center">根号</td>
+<td>\sqrt</td>
+</tr>
+<tr>
+<td align="center">绝对值</td>
+<td>\vbar</td>
+</tr>
+<tr>
+<td align="center">微分符号</td>
+<td>\int</td>
+</tr>
+<tr>
+<td align="center">求和</td>
+<td>\sum</td>
+</tr>
+</tbody></table>
+<p>参考链接</p>
+<ul>
+<li>[Word官方教程](<a href="https://support.office.com/zh-cn/article/word-中使用-unicodemath-和-latex-的线性格式公式-2e00618d-b1fd-49d8-8cb4-8d17f25754f8#__use_math_autocorrect" target="_blank" rel="noopener">https://support.office.com/zh-cn/article/word-中使用-unicodemath-和-latex-的线性格式公式-2e00618d-b1fd-49d8-8cb4-8d17f25754f8#__use_math_autocorrect</a></li>
+</ul>
+<ul>
+<li><a href="http://www.unicode.org/notes/tn28/UTN28-PlainTextMath-v3.pdf" target="_blank" rel="noopener">Unicode公式的官方的参考文档</a>（使用方法：直接搜索你想要的数学符号的英文名即可）</li>
+</ul>
+<p>原文：<a href="https://www.jianshu.com/p/9e4e2e561789" target="_blank" rel="noopener">https://www.jianshu.com/p/9e4e2e561789</a></p>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/%E6%95%99%E7%A8%8B/" rel="tag"># 教程</a>
+          
+            <a href="/tags/Word/" rel="tag"># Word</a>
+          
+        </div>
+      
+
+      
+      
+        <div class="post-widgets">
+        
+
+        
+
+        
+          
+          <div id="needsharebutton-postbottom">
+            <span class="btn">
+              <i class="fa fa-share-alt" aria-hidden="true"></i>
+            </span>
+          </div>
+        
+        </div>
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              
+                <a href="/2017/12/20/%E3%80%90Python%E3%80%91%E5%AE%89%E8%A3%85pycocotools%E9%94%99%E8%AF%AF/" rel="prev" title="【Python】安装pycocotools错误">
+                  <i class="fa fa-chevron-left"></i> 【Python】安装pycocotools错误
+                </a>
+              
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              
+                <a href="/2017/12/07/%E6%9C%80%E7%9B%B4%E7%99%BD%E7%9A%84%E5%BE%AE%E8%BD%AF%E5%AE%98%E6%96%B9%E8%BF%9C%E7%A8%8B%E6%A1%8C%E9%9D%A2Remote-Desktop-APP%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/" rel="next" title="最直白的微软官方远程桌面Remote-Desktop-APP使用方法">
+                  最直白的微软官方远程桌面Remote-Desktop-APP使用方法 <i class="fa fa-chevron-right"></i>
+                </a>
+              
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+      <div id="sidebar-dimmer"></div>
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="/images/android-chrome-192x192.png"
+                alt="Jason Lei" />
+            
+              <p class="site-author-name" itemprop="name">Jason Lei</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives">
+              
+                  <span class="site-state-item-count">41</span>
+                  <span class="site-state-item-name">posts</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">6</span>
+                  <span class="site-state-item-name">categories</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">21</span>
+                  <span class="site-state-item-name">tags</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+        </div>
+      </section>
+
+      
+
+      
+
+    </div>
+    
+    <div class="sidebar-signature motion-element">
+      <span class="signature-svg motion-element"></span>
+    </div>
+
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Jason Lei</span>
+
+  
+</div>
+
+
+  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Muse</a></div>
+
+
+
+  <div class="footer-custom">Visit me at <a href="https://github.com/bjason" target="_blank" rel="noopener">GitHub</a> <a href="https://www.douban.com/people/Billei/" target="_blank" rel="noopener">豆瓣</a> <a href="https://www.weibo.com/leiyuchu/" target="_blank" rel="noopener">微博</a> <a href="https://vsco.co/billei/gallery" target="_blank" rel="noopener">VSCO</a> <a href="https://www.instagram.com/_bjsn/" target="_blank" rel="noopener">Instagram</a> <a href="https://www.last.fm/user/BilleiJason" target="_blank" rel="noopener">Last.fm</a> <a href="https://open.spotify.com/user/22bbslwmudhmf5g4clsondfbi?si=ZSDSaAdYQ8yclrZ1LTE2iA" target="_blank" rel="noopener">Spotify</a> <a href="https://www.jianshu.com/u/129a345ca11b" target="_blank" rel="noopener">简书</a></div>
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+  
+  <link rel="stylesheet" href="/lib/needsharebutton/needsharebutton.css">
+
+  
+  
+  <script src="/lib/needsharebutton/needsharebutton.js"></script>
+
+  <script>
+    
+      pbOptions = {};
+      
+          pbOptions.iconStyle = "default";
+      
+          pbOptions.boxForm = "horizontal";
+      
+          pbOptions.position = "bottomCenter";
+      
+          pbOptions.networks = "Weibo,Wechat,Douban,QQZone,Twitter,Facebook";
+      
+      new needShareButton('#needsharebutton-postbottom', pbOptions);
+    
+    
+  </script>
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
