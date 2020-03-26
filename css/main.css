@@ -1723,6 +1723,7 @@ pre .javascript .function {
 }
 .site-overview-wrap {
   overflow: hidden;
+  height: 100%;
 }
 .site-overview {
   overflow-y: auto;
@@ -1858,7 +1859,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ff3cff;
+  background: #bfc38b;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2754,7 +2755,7 @@ embed {
 }
 .sidebar-signature {
   position: absolute;
-  bottom: 10px;
+  bottom: 40px;
   right: 40px;
   display: none;
 }

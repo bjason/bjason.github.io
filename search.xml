@@ -10,8 +10,8 @@
         <category>教程</category>
       </categories>
       <tags>
-        <tag>前端</tag>
         <tag>Hexo</tag>
+        <tag>前端</tag>
       </tags>
   </entry>
   <entry>
@@ -1197,6 +1197,23 @@
       </tags>
   </entry>
   <entry>
+    <title>VS-Code中code-runner运行Python程序[Done]-exited-with-code=null</title>
+    <url>/2017/12/05/VS-Code%E4%B8%ADcode-runner%E8%BF%90%E8%A1%8CPython%E7%A8%8B%E5%BA%8F%5BDone%5D-exited-with-code=null/</url>
+    <content><![CDATA[<p>如果在Visual Studio Code中运行Python程序一半就自动停止了，并弹出错误：[Done]-exited-with-code=null，这应该是Code Runner插件的问题。直接使用Terminal运行该程序即可避免，或者可以更改Code Runner的设置：</p>
+<p>（<code>文件</code>-&gt;<code>偏好设置</code>-&gt;<code>设置</code>）</p>
+<figure class="highlight json"><table><tr><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    <span class="attr">"code-runner.runInTerminal"</span>: <span class="literal">true</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>或者</p>
+<figure class="highlight json"><table><tr><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    <span class="attr">"code-runner.executorMap.python"</span>: <span class="string">"python -u"</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>Python</tag>
+        <tag>VS Code</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>【Python】使用urllib2时出现400-Bad-Request错误</title>
     <url>/2017/12/05/%E3%80%90Python%E3%80%91%E4%BD%BF%E7%94%A8urllib2%E6%97%B6400-Bad-Request%E9%94%99%E8%AF%AF/</url>
     <content><![CDATA[<p>可能出错的地方：</p>
@@ -1217,23 +1234,6 @@
       </categories>
       <tags>
         <tag>Python</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>VS-Code中code-runner运行Python程序[Done]-exited-with-code=null</title>
-    <url>/2017/12/05/VS-Code%E4%B8%ADcode-runner%E8%BF%90%E8%A1%8CPython%E7%A8%8B%E5%BA%8F%5BDone%5D-exited-with-code=null/</url>
-    <content><![CDATA[<p>如果在Visual Studio Code中运行Python程序一半就自动停止了，并弹出错误：[Done]-exited-with-code=null，这应该是Code Runner插件的问题。直接使用Terminal运行该程序即可避免，或者可以更改Code Runner的设置：</p>
-<p>（<code>文件</code>-&gt;<code>偏好设置</code>-&gt;<code>设置</code>）</p>
-<figure class="highlight json"><table><tr><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    <span class="attr">"code-runner.runInTerminal"</span>: <span class="literal">true</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>或者</p>
-<figure class="highlight json"><table><tr><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    <span class="attr">"code-runner.executorMap.python"</span>: <span class="string">"python -u"</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>Python</tag>
-        <tag>VS Code</tag>
       </tags>
   </entry>
   <entry>
@@ -1271,8 +1271,8 @@
         <category>技术</category>
       </categories>
       <tags>
-        <tag>WSL</tag>
         <tag>Windows</tag>
+        <tag>WSL</tag>
       </tags>
   </entry>
   <entry>
