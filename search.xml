@@ -646,13 +646,13 @@
       </tags>
   </entry>
   <entry>
-    <title>使用D3-JS进行文字渐变-text-gradient-effect-in-d3-js</title>
+    <title>使用D3.JS进行文字渐变-text-gradient-effect-in-d3.js</title>
     <url>/2019/12/05/%E4%BD%BF%E7%94%A8D3-JS%E8%BF%9B%E8%A1%8C%E6%96%87%E5%AD%97%E6%B8%90%E5%8F%98-text-gradient-effect-in-d3-js/</url>
     <content><![CDATA[<p>使用以下模板即可：</p>
 <p>using the following template:</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">vis.select(&quot;.需要改变的文字的类&quot;) &#x2F;&#x2F; the class the text to be changed belongs to </span><br><span class="line">.transition()</span><br><span class="line">.style(&quot;opacity&quot;, 0)</span><br><span class="line">.duration(500)</span><br><span class="line">.transition()</span><br><span class="line">.duration(500)</span><br><span class="line">.style(&quot;opacity&quot;, 1)</span><br><span class="line">.text(&quot;最终需要变成的文字&quot;); &#x2F;&#x2F; the final text to be</span><br></pre></td></tr></table></figure>
 <p>最终效果如下：</p>
-<p>Showcase:<br><img src="https://upload-images.jianshu.io/upload_images/25254-5525f58eb7645ffa.gif?imageMogr2/auto-orient/strip" alt="ezgif-2-d46559584957.gif"><br>如果不动请点原图</p>
+<p>Showcase:<br><img src="https://upload-images.jianshu.io/upload_images/25254-5525f58eb7645ffa.gif" alt="ezgif-2-d46559584957.gif"><br>如果不动请点原图</p>
 ]]></content>
       <categories>
         <category>技术</category>
@@ -738,7 +738,7 @@
     <title>Windows-10-1809更新后窗口边框变粗解决办法</title>
     <url>/2019/11/05/Windows-10-1809%E6%9B%B4%E6%96%B0%E5%90%8E%E7%AA%97%E5%8F%A3%E8%BE%B9%E6%A1%86%E5%8F%98%E7%B2%97/</url>
     <content><![CDATA[<p>更新后许多软件窗口边框变粗：</p>
-<p><img src="https://upload-images.jianshu.io/upload_images/25254-98132a6b05b1297c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Snipaste_2019-03-28_20-56-57.png"></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/25254-98132a6b05b1297c.png" alt="Snipaste_2019-03-28_20-56-57.png"></p>
 <p>解决方法：在设置-主题中，重新选择你的主题即可。</p>
 <p>source: <a href="https://www.reddit.com/r/Windows10/comments/9xa6vh/window_borders_extremely_thick/" target="_blank" rel="noopener">https://www.reddit.com/r/Windows10/comments/9xa6vh/window_borders_extremely_thick/</a></p>
 ]]></content>
@@ -1020,19 +1020,19 @@
 
 
 <p>曾经以为用Word输入公式是一件非常困难且丑陋的事情，如果用Surface等手写笔系列的产品，使用Ink to Math工具可以直接手写输入，但如果没有触屏那就变成了一件很难的事情。如果不懂得技巧，可能只会像我原来利用上标（Ctrl+Shift+=）下标（Ctrl+=）输入的公式一样丑陋：</p>
-<p><img src="https://upload-images.jianshu.io/upload_images/25254-aa7675e4a6b89f7f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="不使用公式工具"></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/25254-aa7675e4a6b89f7f.png" alt="不使用公式工具"></p>
 <p>最近发现使用Word中自带的“公式工具”可以非常迅速和美观的输入公式，并且支持类似Latex格式的语法和希腊字母的输入，如果使用Wolframe等工具可以很方便的直接将公式粘贴到Word中：</p>
-<p><img src="https://upload-images.jianshu.io/upload_images/25254-102c4741cbae3b13.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="方便的输入希腊字母、下标、幂和求和公式"></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/25254-102c4741cbae3b13.png" alt="方便的输入希腊字母、下标、幂和求和公式"></p>
 <p>熟练之后，这套方法也能在OneNote中使用！方法完全类似。然而我发现中文互联网似乎没有关于该工具的教程，下面以Office 365为例展示如何使用该工具。</p>
 <hr>
 <ol>
 <li>开启“公式工具”。菜单栏-插入-公式，或使用快捷键Alt+=，旋即会出现“在此输入公式”的候选框：</li>
 </ol>
-<p><img src="https://upload-images.jianshu.io/upload_images/25254-ac1dd40682379486.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="候选框"></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/25254-ac1dd40682379486.png" alt="候选框"></p>
 <ol start="2">
 <li>键入公式。常规输入直接键入字母和数字即可，特殊符号和字母可以在菜单栏选中输入：</li>
 </ol>
-<p><img src="https://upload-images.jianshu.io/upload_images/25254-927ef03e433154bc.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/25254-927ef03e433154bc.png" alt=""></p>
 <ol start="3">
 <li>如果想要更高的速度，可以使用不同的语法，在菜单栏选中。Latex语法不再细讲，Unicode需要记住一些语法，如/代表分数，而希腊字母、特殊符号等需要使用反斜杠工具（Enter键上方的反斜杠\）再输入名称，如θ直接输入\theta再按空格即可。</li>
 </ol>
@@ -1115,7 +1115,7 @@
 </tbody></table>
 <p>参考链接</p>
 <ul>
-<li>[Word官方教程](<a href="https://support.office.com/zh-cn/article/word-中使用-unicodemath-和-latex-的线性格式公式-2e00618d-b1fd-49d8-8cb4-8d17f25754f8#__use_math_autocorrect" target="_blank" rel="noopener">https://support.office.com/zh-cn/article/word-中使用-unicodemath-和-latex-的线性格式公式-2e00618d-b1fd-49d8-8cb4-8d17f25754f8#__use_math_autocorrect</a></li>
+<li><a href="https://support.office.com/zh-cn/article/word-中使用-unicodemath-和-latex-的线性格式公式-2e00618d-b1fd-49d8-8cb4-8d17f25754f8#__use_math_autocorrect" target="_blank" rel="noopener">Word官方教程</a></li>
 </ul>
 <ul>
 <li><a href="http://www.unicode.org/notes/tn28/UTN28-PlainTextMath-v3.pdf" target="_blank" rel="noopener">Unicode公式的官方的参考文档</a>（使用方法：直接搜索你想要的数学符号的英文名即可）</li>
@@ -1134,9 +1134,9 @@
     <title>最直白的微软官方远程桌面Remote-Desktop-APP使用方法</title>
     <url>/2017/12/07/%E6%9C%80%E7%9B%B4%E7%99%BD%E7%9A%84%E5%BE%AE%E8%BD%AF%E5%AE%98%E6%96%B9%E8%BF%9C%E7%A8%8B%E6%A1%8C%E9%9D%A2Remote-Desktop-APP%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/</url>
     <content><![CDATA[<ol>
-<li>先在手机上下载Remote Desktop Client</li>
-<li>在电脑上下载Microsoft Remote Desktop assistant(<a href="https://www.microsoft.com/en-us/download/confirmation.aspx?id=50042" target="_blank" rel="noopener">https://www.microsoft.com/en-us/download/confirmation.aspx?id=50042</a>)</li>
-<li>按照步骤安装，随后显示该界面：<br><img src="https://upload-images.jianshu.io/upload_images/25254-f19bd815e0a437cb.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></li>
+<li>先在手机上下载 <a href="https://play.google.com/store/apps/details?id=com.microsoft.rdc.android&hl=en_US" target="_blank" rel="noopener">Remote Desktop Client</a></li>
+<li>在电脑上下载 <a href="https://www.microsoft.com/en-us/download/confirmation.aspx?id=50042" target="_blank" rel="noopener">Microsoft Remote Desktop assistant</a></li>
+<li>按照步骤安装，随后显示该界面：<br><img src="https://upload-images.jianshu.io/upload_images/25254-f19bd815e0a437cb.png" alt="image.png"></li>
 <li>点击手机端右上角的加号，选择桌面，按照上图中的PC name和User Name填写即可</li>
 </ol>
 ]]></content>
