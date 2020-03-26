@@ -997,152 +997,6 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://bjason.github.io/2017/12/05/VS-Code%E4%B8%ADcode-runner%E8%BF%90%E8%A1%8CPython%E7%A8%8B%E5%BA%8F%5BDone%5D-exited-with-code=null/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Jason Lei">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/android-chrome-192x192.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/12/05/VS-Code%E4%B8%ADcode-runner%E8%BF%90%E8%A1%8CPython%E7%A8%8B%E5%BA%8F%5BDone%5D-exited-with-code=null/" itemprop="url">VS-Code中code-runner运行Python程序[Done]-exited-with-code=null</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-12-05T14:03:34-08:00">
-                2017-12-05
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E6%8A%80%E6%9C%AF/" itemprop="url" rel="index">
-                    <span itemprop="name">技术</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>如果在Visual Studio Code中运行Python程序一半就自动停止了，并弹出错误：[Done]-exited-with-code=null，这应该是Code Runner插件的问题。直接使用Terminal运行该程序即可避免，或者可以更改Code Runner的设置：</p>
-<p>（<code>文件</code>-&gt;<code>偏好设置</code>-&gt;<code>设置</code>）</p>
-<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    <span class="attr">"code-runner.runInTerminal"</span>: <span class="literal">true</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>或者</p>
-<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    <span class="attr">"code-runner.executorMap.python"</span>: <span class="string">"python -u"</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="https://bjason.github.io/2017/12/05/%E3%80%90Python%E3%80%91%E4%BD%BF%E7%94%A8urllib2%E6%97%B6400-Bad-Request%E9%94%99%E8%AF%AF/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1248,6 +1102,152 @@
 <li><p>request的URL格式错误，如少参数，或者含空格。后者需要转换成%20或+，可以用urllib.quote()进行转换</p>
 </li>
 </ol>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://bjason.github.io/2017/12/05/VS-Code%E4%B8%ADcode-runner%E8%BF%90%E8%A1%8CPython%E7%A8%8B%E5%BA%8F%5BDone%5D-exited-with-code=null/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Jason Lei">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/android-chrome-192x192.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/12/05/VS-Code%E4%B8%ADcode-runner%E8%BF%90%E8%A1%8CPython%E7%A8%8B%E5%BA%8F%5BDone%5D-exited-with-code=null/" itemprop="url">VS-Code中code-runner运行Python程序[Done]-exited-with-code=null</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-12-05T14:03:34-08:00">
+                2017-12-05
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E6%8A%80%E6%9C%AF/" itemprop="url" rel="index">
+                    <span itemprop="name">技术</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>如果在Visual Studio Code中运行Python程序一半就自动停止了，并弹出错误：[Done]-exited-with-code=null，这应该是Code Runner插件的问题。直接使用Terminal运行该程序即可避免，或者可以更改Code Runner的设置：</p>
+<p>（<code>文件</code>-&gt;<code>偏好设置</code>-&gt;<code>设置</code>）</p>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    <span class="attr">"code-runner.runInTerminal"</span>: <span class="literal">true</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>或者</p>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    <span class="attr">"code-runner.executorMap.python"</span>: <span class="string">"python -u"</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
           
         
