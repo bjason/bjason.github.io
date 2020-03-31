@@ -1,6 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Long video recorded by Canon EOS appears 0 byte on Windows, cannot import them on macOS. The only correct solution</title>
+    <url>/2020/03/31/EOSSolution/</url>
+    <content><![CDATA[<p>If you recorded a long video which <strong>can be correctly played on the camera</strong>, but after connected to the computer, it shows that the video size is 0 bytes and cannot be played while other small files can be normal play and have correct size, or when try to import the videos using Photo App on macOS but failed to see them in the ‘imported’ directory, refer to this article to solve the problem. Otherwise try other methods such as disk recovery.</p>
+<a id="more"></a>
+
+<h1 id="Reason"><a href="#Reason" class="headerlink" title="Reason"></a>Reason</h1><p>The cause of the problem is not hardware or software issue, so don’t worry about your file is missing. It is the disk configuration problem. Due to the limitation of FAT32 disk format itself which does not support transfering files bigger than 4GB. Hence the phenomenon where big files go wrong while small file is normal happens.</p>
+<h1 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h1><p>Method 1: if you have a card reader, you can use it directly.</p>
+<p>Method 2: if you do not have a card reader, you can use the software which can be downloaded from the official site: <a href="https://hk.canon/zh_HK/support/0200570702/1" target="_blank" rel="noopener">https://hk.canon/zh_HK/support/0200570702/1</a>. Before downloading, you may need to provide a serial number, which is a series of Numbers at the bottom of the camera (or refer to this website: <a href="https://www.canon-europe.com/support/consumer_products/where_to_find_your_serial_number/" target="_blank" rel="noopener">https://www.canon-europe.com/support/consumer_products/where_to_find_your_serial_number/</a><br>) :</p>
+<p>! [number] (/img/EOS.png)</p>
+<p>After installation, open Canon EOS Utility (or Canon EOS Utility 2). Then connect the camera to the computer, and make sure the camera is on and in connection mode. The software should automatically recognize the camera. Select the videos to be imported and wait till it is done. (<a href="https://www.canon.com.cn/special/ds_abcbook/application01.html" target="_blank" rel="noopener">see the official document</a>) </p>
+]]></content>
+      <categories>
+        <category>其他</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>佳能录制的视频连接电脑只有0字节，macOS无法导入的解决方案</title>
+    <url>/2020/03/31/%E4%BD%B3%E8%83%BD%E5%BD%95%E5%88%B6%E7%9A%84%E8%A7%86%E9%A2%91%E8%BF%9E%E6%8E%A5%E7%94%B5%E8%84%91%E5%8F%AA%E6%9C%890%E5%AD%97%E8%8A%82%EF%BC%8CmacOS%E6%97%A0%E6%B3%95%E5%AF%BC%E5%85%A5%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/</url>
+    <content><![CDATA[<p>如果你录制了一段长视频，<strong>在相机上可以正常播放</strong>，但连接电脑后却显示该视频大小为0字节，也不能播放，然而其他小文件却可以正常播放和显示大小，或在macOS上用相册App试图导入时直接闪到结束页面，也并没有在已导入中看到该视频，那么请参考本文解决问题。否则请尝试使用其他方法，如磁盘恢复等。</p>
+<a id="more"></a>
+
+<h1 id="原因"><a href="#原因" class="headerlink" title="原因"></a>原因</h1><p>造成这个问题的原因不是硬件或者软件的问题，所以不用担心您的文件丢失，这是磁盘格式的设置问题，由于磁盘格式本身的限制，出现这个问题的单反应该是和电脑连接时为了兼容性选择了FAT32的格式，然而这种磁盘格式不支持4GB以上的文件，因此才出现了上述大文件出错小文件正常的现象。</p>
+<h1 id="解决方法"><a href="#解决方法" class="headerlink" title="解决方法"></a>解决方法</h1><p>方法1：如果有读卡器，可以直接使用读卡器读入。</p>
+<p>方法2：如果没有读卡器，可以使用软件的方法，直接下载官方提供的导入软件：<a href="https://hk.canon/zh_HK/support/0200570702/1" target="_blank" rel="noopener">https://hk.canon/zh_HK/support/0200570702/1</a>。下载前可能需要提供序列号，序列号就是相机底部一串数字（或参考该网址：<a href="https://www.canon-europe.com/support/consumer_products/where_to_find_your_serial_number/" target="_blank" rel="noopener">https://www.canon-europe.com/support/consumer_products/where_to_find_your_serial_number/</a><br>）：</p>
+<p><img src="/img/EOS.png" alt="序列号"></p>
+<p>安装后打开Canon EOS Utility（或者Canon EOS Utility 2），连接单反到电脑，并确保相机开启并进入连接模式，软件应该会自动识别到相机，随后点击开始图像下载并选择需要导入的视频，等待导入即可。（<a href="https://www.canon.com.cn/special/ds_abcbook/application01.html" target="_blank" rel="noopener">参阅官方文档</a>）</p>
+]]></content>
+      <categories>
+        <category>其他</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>MetroUI做对了什么</title>
+    <url>/2020/03/30/MetroUI%E5%81%9A%E5%AF%B9%E4%BA%86%E4%BB%80%E4%B9%88/</url>
+    <content><![CDATA[<p>随着新的开始菜单设计的展示、Surface Neo 和 Windows 10X 的发布，Metro UI 的最后一个设计元素动态磁贴也似乎即将在微软的设计语言里谢幕。虽然设计风格的名字从 Zune 时期的无名氏到Windows Phone 7 时期的 Metro UI 再到 Modern UI、Fluent Design，和微软其他的产品一样被改名部始终缠着而显得十分混乱，但语言本身却保持了很强的逻辑自洽和异常独特的风格，特别是在如今 Android 的 Material Design、iOS、Fluent Design 都愈发趋同的情况下，Metro UI的设计语言依然让许多粉丝魂牵梦绕，强调流畅自然的层级动画、突出信息的视觉到现在依然显得十分超前。很多人讨论这套设计风格做错了什么，但在当下，Metro UI 做对了什么似乎更加重要：它是如何达到独树一帜的？它对现在的设计风格有什么样的启示？</p>
+<p>为一个设计风格定下基调的是设计者认为一个几乎系统中最重要的内容是什么，iOS （Android）认为重要的是 App——每一个需求都可以交由 App 完成——因此你可以看到它对曾经操作系统的改造都是为了突出 App：桌面只是个文件夹改造成存放 App 的空间、Windows 徽标键改造成 Home 键以便从任何界面都可以直接回到桌面、“分享”按钮强调各个 App 间的独立等等。而对于 Metro UI 来说，它认为最重要的是<b>信息</b>，在电子时代，所有的内容都是信息，而 App 本质上就是信息流通的信使，你下载一个 App，是因为这个提供商可以提供对你来说很重要的信息：支付宝传递的是收款到账的信息，而不是直接把钱递到你手中。</p>
+<p>因而我们回顾 Metro UI 的一些特点，可以发现它们都是为高效传递信息而服务的。</p>
+<p>因为强调信息，整个系统才透露出强烈的文字至上的极简气息，它对图片（不是图表）的厌恶也是来源于此：图片往往用于装饰，因而会降低信息传递的效率。而相比较图表，文字更万能、更精准、可以存在于各种形式中，图表受限于数字、涵盖的信息有限、只能用图片的形式展示。一个强调文字的设计系统的缺点是缺少了各个元素、层级之间区别，所以很自然地，微软从文字排版中获得灵感，使用了文字尺寸暗示层级。</p>
+<p>被很多人不喜欢的过于统一的设计语言，“所有 App 都长一个样”：形式不重要，各个 App 看起来一样。App 本身不重要，重要的是传递的信息。</p>
+<p>而实现上，微软想到了一个绝佳的隐喻：那就是<b>窗口</b>。磁贴是窗口，显示屏是窗口。</p>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>设计</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>我是如何用Hexo/next主题创造这个博客的</title>
     <url>/2020/03/24/%E5%85%B3%E4%BA%8E%E8%BF%99%E4%B8%AA%E5%8D%9A%E5%AE%A2/</url>
     <content><![CDATA[<p>本文讨论了关于这个博客的设计和实现，尽管网上Hexo/next的教程非常多，从Github账号的申请到部署再到花里胡哨的美化都应有尽有，但是如何进行功能和视觉要素的选取，如何贴近博客本身的气质，以及对Hexo代码的梳理以便深度美化，也是需要思考的事情。本文会分几个部分，首先会覆盖一些基础的、我跟着走的建站的教程，第二是Hexo/Next博客的文件目录和实现的细说，第三是本博客的设计的一些思考。为了更好的区分，将前两部分和第三部分分为两篇。</p>
@@ -1480,34 +1529,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Spotify与星巴克合作：音乐圈的大事 而不是咖啡圈的</title>
-    <url>/2015/05/25/surface3/</url>
-    <content><![CDATA[<p>如果说上个十年，给我们带来惊喜最多的是推出了iPod、iPhone的苹果的话，那么下一个十年，给我们带来最多惊喜的或许会是微软。自新CEO纳德拉上任一年来，微软展示了HoloLens、宣布了Windows对9寸以下设备的免费授权策略、推出了Office的iPad、android版、发布备受好评的Windows 10。上月，微软低调发布了一款全新的平板电脑Surface 3。作为拥有Atom处理器的Surface Pro 3缩小版，Surface 3十分轻便，堪称微软史上推出的最轻薄的平板电脑，重量仅为600克。令人欣喜的一点是，Surface 3相较于前两代产品Surface RT和Surface 2，既保留了他们的优良特性，如出色的屏幕、优良的做工和长久的续航时间，也顺从民意地将曾经因应用缺乏而饱受诟病的Windows RT系统，换成了Surface 3中预装的Windows 8.1系统，让其实用性大大提升。不仅如此，Windows 8.1在未来将可以享受升级到Windows 10的便利，但于此同时，Surface 3的背叛确认了Windows RT的彻底死亡。</p>
-<a id="more"></a>
-
-<p>除此之外，Surface 3的亮点还有屏幕支持压感输入，这本是原来是Surface Pro的卖点之一。值得一提的是，微软对Surface 3的定位仍是一款平板，但可以预见，配备了极高生产力的Windows 8.1，它将会威胁到一些功能类似的低端PC。</p>
-<p>在Surface 3的官方介绍页上，微软一再将其与iPad Air 2进行对比，这似乎回到了Surface诞生之初的意义。2009年推出的iPad是苹果在屏幕尺寸上的一次大跃进，这变相打开了平板电脑的这片新战场。在很大程度上说，iPhone加iPad的共同进攻使得微软苦不堪言，使微软在所有硬件的操作系统占有率降到了20%左右，Windows RT就是在这种情况下诞生的——它在Windows的基础上对触屏做出了优化，牺牲了部分性能但换来了流畅。Surface RT则是作为引导OEM所设计的行业标杆，旗舰示范，它在硬件上的优异无可挑剔。但仅支持为ARM编写的软件、缺失的软件生态让Windows RT几乎成了Surface RT的独角戏，令人汗颜的是，Surface RT的地位也十分尴尬，微软无法拿出太多理由让用户放弃iPad或Android寨板去选择一个不成熟的系统。Surface初代和其升级款Surface 2都是犯了如此的错误，尽管他们有强大的生产力，轻便且续航优秀，但在当今，生态的重要性愈发重要。随着微软开放Windows对9寸以下设备的授权，Windows RT更是没了存在的必要。</p>
-<p>可以说，Surface虽然一直没有迷失，将自己放在iPad对手的位置上，但是作为消费者产品，生态环境的高低是必须正视的问题。微软知道Surface 3肩负着重大的使命，而且似乎这次终于肯听从使用者的意见。这么说来，Surface 3对Windows RT的抛弃，可谓必然之举——与iPad的娱乐属性相比稍弱，可以用exe来弥补。而即将到来的Windows 10将给生态带来颠覆式的焕新。</p>
-<p>同为Surface家族产品，Surface 3和Pro版本的外观设计上非常接近，同样的设计语言，同样的机身材质，三个可调节角度的站立式支架。Surface 3的接口也大部分位于机身右侧，如全尺寸USB 3.0、mini DP接口、Micro USB充电口等。前后双摄像头分别为350万像素和800万像素，均支持1080p视频拍摄。有一个比较小的细节是，支架上的微软标志是四个方块造型，并不是Pro 3背后的Surface字样，微软解释说，这是因为Surface包含了微软几乎全部的体验。屏幕尺寸上，相较于Surface Pro 3的12寸屏幕，Surface 3配备10.8英寸1920×1280分辨率的3：2屏幕，而不再是前代产品的16：9屏幕——Surface团队认为3：2的屏幕更接近纸张，更适合直立显示。售价上来看，Surface 3起售价499美元，而现有的Surface Pro 3的售价则是799美元起。</p>
-<p>这样看来，微软确定了Surface系列的两大分工，Surface Pro针对对性能拥有较高要求的消费者，而Surface将作为入门产品，可以满足轻度的办公需求，引导更多消费者进入微软的生态体验。后者的价格优势可以吸引对价格敏感的消费群体，如学生等。同时，两者也起到了行业标杆的作用，这种思路与谷歌的Nexus手机一致，都是用以激励OEM生产出更多元、更优秀、更符合系统理念的产品。</p>
-<p>Surface 3发布后的第五天，即4月4日，微软迎来了其40周岁的生日。1975年，刚从哈佛大学退学的比尔·盖茨，和他的高中校友保罗·艾伦在阿尔伯克基创建了微软，他们的目标是“让每张办公桌和每个家庭都拥有一台计算机”。1985年，微软发布Microsoft Windows 1.0，标志着PC向普通消费者普及浪潮的开始。1995年，微软发布Windows 95操作系统，更是大大加快了PC的普及进程。如今的微软，已成为一个拥有Azure、Bing、Skype、BizTalk Server、微软虚拟化解决方案、Xbox和Lumia等一系列软硬件及网络服务的科技帝国。40年过去，这家IT领域的新人，也从懵懂无知成长为世界一流的企业。</p>
-<p>很多跨国公司都可以用“庞大”来形容，而能用“伟大”来形容的公司却屈指可数。微软的伟大在于，它带着让“每个人都能用上电脑”的目标出发，时至今日，微软仍在履行着当初的目标，让计算机普及到南亚、东南亚以及非洲的低收入家庭。现在不仅基本实现了这个目标，还在很大程度上促进了互联网的普及和全球信息化产业的发展。有很多企业在改变我们的生活，而微软则是在改变着世界。</p>
-<p>微软有过很多失败的产品，如zune播放器、kin手机等等。实际上，我们讨论问题的时候往往忽略了时间的局限，微软早在2000年就已展示了平板电脑形态的产品和系统，如今风生水起的物联网概念，也是微软早在1995年就开始讨论的事情。有时候微软走得太过超前，而不能被世人所接受。有一句话叫先人一步是天才，领先两步是疯子。苹果是天才，而微软则是那个疯子。</p>
-<p>BGM</p>
-<p>#GETITRIHGT –Miley Cyrus</p>
-<p>No Sleep – Wiz Khalifa</p>
-<p>Hey Ya! - Outkast</p>
-<p>Girls – the 1975</p>
-<p>Porcelain – Moby</p>
-]]></content>
-      <categories>
-        <category>评论</category>
-      </categories>
-      <tags>
-        <tag>科技</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>豆瓣2.0：它的新启程</title>
     <url>/2015/05/25/douban2.0/</url>
     <content><![CDATA[<p>从去年开始，豆瓣——这家曾经PC时代中文圈社交异类——也开始了移动化的进程。2013年下半年，相继推出的豆瓣东西、豆瓣事情、豆瓣专栏等APP引得当时的互联网一片欢呼。然而，无可置疑的是，豆瓣的背后是每况愈下的用户活跃度。这家以慢为美的公司，在传统互联网转向移动互联的大潮中，眼睁睁地把流量送给了诸如陌陌、微信等移动端发力的社交网络。</p>
@@ -1528,6 +1549,34 @@
 <p>豆瓣2.0打破了曾经的各个分社区的壁垒，豆列中可以添加任意类型的豆瓣内容。</p>
 <p>对于移动场景下的内容分享、消费来说，豆列其实是一种非常好的形式：首先，豆列是一种经过大量用户UGC筛选的清单，本身内容质量较高，可信度也强；其次，移动场景下，用户阅读更具备目的性，因此围绕某种主题而创建的豆列，十分适合移动设备上阅读；再者，对于豆瓣本身来说，豆列地位的突出能够降低人的决策难度，适合移动电商场景，也即意味着有助于豆瓣商业化的步伐。唯一存在的问题是：豆瓣该如何把曾经的流量转化成优质的豆列内容。</p>
 <p>当然，依靠豆瓣积累多年的用户活跃度，这并不是个难题。</p>
+]]></content>
+      <categories>
+        <category>评论</category>
+      </categories>
+      <tags>
+        <tag>科技</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Spotify与星巴克合作：音乐圈的大事 而不是咖啡圈的</title>
+    <url>/2015/05/25/surface3/</url>
+    <content><![CDATA[<p>如果说上个十年，给我们带来惊喜最多的是推出了iPod、iPhone的苹果的话，那么下一个十年，给我们带来最多惊喜的或许会是微软。自新CEO纳德拉上任一年来，微软展示了HoloLens、宣布了Windows对9寸以下设备的免费授权策略、推出了Office的iPad、android版、发布备受好评的Windows 10。上月，微软低调发布了一款全新的平板电脑Surface 3。作为拥有Atom处理器的Surface Pro 3缩小版，Surface 3十分轻便，堪称微软史上推出的最轻薄的平板电脑，重量仅为600克。令人欣喜的一点是，Surface 3相较于前两代产品Surface RT和Surface 2，既保留了他们的优良特性，如出色的屏幕、优良的做工和长久的续航时间，也顺从民意地将曾经因应用缺乏而饱受诟病的Windows RT系统，换成了Surface 3中预装的Windows 8.1系统，让其实用性大大提升。不仅如此，Windows 8.1在未来将可以享受升级到Windows 10的便利，但于此同时，Surface 3的背叛确认了Windows RT的彻底死亡。</p>
+<a id="more"></a>
+
+<p>除此之外，Surface 3的亮点还有屏幕支持压感输入，这本是原来是Surface Pro的卖点之一。值得一提的是，微软对Surface 3的定位仍是一款平板，但可以预见，配备了极高生产力的Windows 8.1，它将会威胁到一些功能类似的低端PC。</p>
+<p>在Surface 3的官方介绍页上，微软一再将其与iPad Air 2进行对比，这似乎回到了Surface诞生之初的意义。2009年推出的iPad是苹果在屏幕尺寸上的一次大跃进，这变相打开了平板电脑的这片新战场。在很大程度上说，iPhone加iPad的共同进攻使得微软苦不堪言，使微软在所有硬件的操作系统占有率降到了20%左右，Windows RT就是在这种情况下诞生的——它在Windows的基础上对触屏做出了优化，牺牲了部分性能但换来了流畅。Surface RT则是作为引导OEM所设计的行业标杆，旗舰示范，它在硬件上的优异无可挑剔。但仅支持为ARM编写的软件、缺失的软件生态让Windows RT几乎成了Surface RT的独角戏，令人汗颜的是，Surface RT的地位也十分尴尬，微软无法拿出太多理由让用户放弃iPad或Android寨板去选择一个不成熟的系统。Surface初代和其升级款Surface 2都是犯了如此的错误，尽管他们有强大的生产力，轻便且续航优秀，但在当今，生态的重要性愈发重要。随着微软开放Windows对9寸以下设备的授权，Windows RT更是没了存在的必要。</p>
+<p>可以说，Surface虽然一直没有迷失，将自己放在iPad对手的位置上，但是作为消费者产品，生态环境的高低是必须正视的问题。微软知道Surface 3肩负着重大的使命，而且似乎这次终于肯听从使用者的意见。这么说来，Surface 3对Windows RT的抛弃，可谓必然之举——与iPad的娱乐属性相比稍弱，可以用exe来弥补。而即将到来的Windows 10将给生态带来颠覆式的焕新。</p>
+<p>同为Surface家族产品，Surface 3和Pro版本的外观设计上非常接近，同样的设计语言，同样的机身材质，三个可调节角度的站立式支架。Surface 3的接口也大部分位于机身右侧，如全尺寸USB 3.0、mini DP接口、Micro USB充电口等。前后双摄像头分别为350万像素和800万像素，均支持1080p视频拍摄。有一个比较小的细节是，支架上的微软标志是四个方块造型，并不是Pro 3背后的Surface字样，微软解释说，这是因为Surface包含了微软几乎全部的体验。屏幕尺寸上，相较于Surface Pro 3的12寸屏幕，Surface 3配备10.8英寸1920×1280分辨率的3：2屏幕，而不再是前代产品的16：9屏幕——Surface团队认为3：2的屏幕更接近纸张，更适合直立显示。售价上来看，Surface 3起售价499美元，而现有的Surface Pro 3的售价则是799美元起。</p>
+<p>这样看来，微软确定了Surface系列的两大分工，Surface Pro针对对性能拥有较高要求的消费者，而Surface将作为入门产品，可以满足轻度的办公需求，引导更多消费者进入微软的生态体验。后者的价格优势可以吸引对价格敏感的消费群体，如学生等。同时，两者也起到了行业标杆的作用，这种思路与谷歌的Nexus手机一致，都是用以激励OEM生产出更多元、更优秀、更符合系统理念的产品。</p>
+<p>Surface 3发布后的第五天，即4月4日，微软迎来了其40周岁的生日。1975年，刚从哈佛大学退学的比尔·盖茨，和他的高中校友保罗·艾伦在阿尔伯克基创建了微软，他们的目标是“让每张办公桌和每个家庭都拥有一台计算机”。1985年，微软发布Microsoft Windows 1.0，标志着PC向普通消费者普及浪潮的开始。1995年，微软发布Windows 95操作系统，更是大大加快了PC的普及进程。如今的微软，已成为一个拥有Azure、Bing、Skype、BizTalk Server、微软虚拟化解决方案、Xbox和Lumia等一系列软硬件及网络服务的科技帝国。40年过去，这家IT领域的新人，也从懵懂无知成长为世界一流的企业。</p>
+<p>很多跨国公司都可以用“庞大”来形容，而能用“伟大”来形容的公司却屈指可数。微软的伟大在于，它带着让“每个人都能用上电脑”的目标出发，时至今日，微软仍在履行着当初的目标，让计算机普及到南亚、东南亚以及非洲的低收入家庭。现在不仅基本实现了这个目标，还在很大程度上促进了互联网的普及和全球信息化产业的发展。有很多企业在改变我们的生活，而微软则是在改变着世界。</p>
+<p>微软有过很多失败的产品，如zune播放器、kin手机等等。实际上，我们讨论问题的时候往往忽略了时间的局限，微软早在2000年就已展示了平板电脑形态的产品和系统，如今风生水起的物联网概念，也是微软早在1995年就开始讨论的事情。有时候微软走得太过超前，而不能被世人所接受。有一句话叫先人一步是天才，领先两步是疯子。苹果是天才，而微软则是那个疯子。</p>
+<p>BGM</p>
+<p>#GETITRIHGT –Miley Cyrus</p>
+<p>No Sleep – Wiz Khalifa</p>
+<p>Hey Ya! - Outkast</p>
+<p>Girls – the 1975</p>
+<p>Porcelain – Moby</p>
 ]]></content>
       <categories>
         <category>评论</category>
