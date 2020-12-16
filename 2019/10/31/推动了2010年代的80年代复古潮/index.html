@@ -217,7 +217,7 @@
         <li class="menu-item menu-item-projects">
           <a href="/projects" rel="section">
             
-            Projects
+            项目
           </a>
         </li>
       
@@ -225,7 +225,7 @@
         <li class="menu-item menu-item-gallery">
           <a href="/gallery" rel="section">
             
-            Gallery
+            图库
           </a>
         </li>
       
@@ -233,7 +233,7 @@
         <li class="menu-item menu-item-map">
           <a href="/Map" rel="section">
             
-            Map
+            足迹
           </a>
         </li>
       
@@ -241,7 +241,7 @@
         <li class="menu-item menu-item-channel">
           <a href="/Channel" rel="section">
             
-            Channel
+            视频频道
           </a>
         </li>
       
@@ -375,6 +375,16 @@
           
 
           
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2019/10/31/%E6%8E%A8%E5%8A%A8%E4%BA%862010%E5%B9%B4%E4%BB%A3%E7%9A%8480%E5%B9%B4%E4%BB%A3%E5%A4%8D%E5%8F%A4%E6%BD%AE/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2019/10/31/%E6%8E%A8%E5%8A%A8%E4%BA%862010%E5%B9%B4%E4%BB%A3%E7%9A%8480%E5%B9%B4%E4%BB%A3%E5%A4%8D%E5%8F%A4%E6%BD%AE/" itemprop="commentCount"></span>
+                </a>
+              </span>
             
           
 
@@ -514,6 +524,9 @@
 
           
 
+  
+    <div class="comments" id="comments">
+    </div>
   
 
 
@@ -781,6 +794,28 @@
 
 
 
+
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail';
+    guest = guest.split(',').filter(item=>{
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: false,
+        notify: false,
+        appId: 'drjbdjfyaSNdGyqe2mLwBhbp-gzGzoHsz',
+        appKey: '9l2u4bbtGMysmQpW3vHzmWta',
+        placeholder: 'Comment',
+        avatar:'hide',
+        guest_info:guest,
+        pageSize:'10' || 10,
+    });
+  </script>
 
 
 
@@ -1147,4 +1182,5 @@
 
   
 
-<script async>window.onload=function(){var a=document.createElement('script'),b=document.getElementsByTagName('script')[0];a.type='text/javascript',a.async=!0,a.src='/sw-register.js?v='+Date.now(),b.parentNode.insertBefore(a,b)};</script></body></html>
+</body>
+</html>

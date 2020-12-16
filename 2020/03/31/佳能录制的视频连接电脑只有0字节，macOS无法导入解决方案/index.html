@@ -214,7 +214,7 @@
         <li class="menu-item menu-item-projects">
           <a href="/projects" rel="section">
             
-            Projects
+            项目
           </a>
         </li>
       
@@ -222,7 +222,7 @@
         <li class="menu-item menu-item-gallery">
           <a href="/gallery" rel="section">
             
-            Gallery
+            图库
           </a>
         </li>
       
@@ -230,7 +230,7 @@
         <li class="menu-item menu-item-map">
           <a href="/Map" rel="section">
             
-            Map
+            足迹
           </a>
         </li>
       
@@ -238,7 +238,7 @@
         <li class="menu-item menu-item-channel">
           <a href="/Channel" rel="section">
             
-            Channel
+            视频频道
           </a>
         </li>
       
@@ -373,6 +373,16 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2020/03/31/%E4%BD%B3%E8%83%BD%E5%BD%95%E5%88%B6%E7%9A%84%E8%A7%86%E9%A2%91%E8%BF%9E%E6%8E%A5%E7%94%B5%E8%84%91%E5%8F%AA%E6%9C%890%E5%AD%97%E8%8A%82%EF%BC%8CmacOS%E6%97%A0%E6%B3%95%E5%AF%BC%E5%85%A5%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2020/03/31/%E4%BD%B3%E8%83%BD%E5%BD%95%E5%88%B6%E7%9A%84%E8%A7%86%E9%A2%91%E8%BF%9E%E6%8E%A5%E7%94%B5%E8%84%91%E5%8F%AA%E6%9C%890%E5%AD%97%E8%8A%82%EF%BC%8CmacOS%E6%97%A0%E6%B3%95%E5%AF%BC%E5%85%A5%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -489,6 +499,9 @@
 
           
 
+  
+    <div class="comments" id="comments">
+    </div>
   
 
 
@@ -781,6 +794,28 @@
 
 
 
+
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail';
+    guest = guest.split(',').filter(item=>{
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: false,
+        notify: false,
+        appId: 'drjbdjfyaSNdGyqe2mLwBhbp-gzGzoHsz',
+        appKey: '9l2u4bbtGMysmQpW3vHzmWta',
+        placeholder: 'Comment',
+        avatar:'hide',
+        guest_info:guest,
+        pageSize:'10' || 10,
+    });
+  </script>
 
 
 
@@ -1147,4 +1182,5 @@
 
   
 
-<script async>window.onload=function(){var a=document.createElement('script'),b=document.getElementsByTagName('script')[0];a.type='text/javascript',a.async=!0,a.src='/sw-register.js?v='+Date.now(),b.parentNode.insertBefore(a,b)};</script></body></html>
+</body>
+</html>

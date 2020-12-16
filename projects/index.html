@@ -95,7 +95,7 @@
 <meta property="og:image" content="https://i.imgur.com/aLzfmW4.png">
 <meta property="og:image" content="https://camo.githubusercontent.com/66b53307d9b404dc24507a9a1d72a7ce59f6ab9d/68747470733a2f2f692e696d6775722e636f6d2f53356a33746c712e6a7067">
 <meta property="article:published_time" content="2020-03-21T09:26:11.000Z">
-<meta property="article:modified_time" content="2020-12-08T03:08:24.346Z">
+<meta property="article:modified_time" content="2020-12-16T08:46:13.256Z">
 <meta property="article:author" content="Jason Lei">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://i.imgur.com/5dLN1md.png">
@@ -216,7 +216,7 @@
         <li class="menu-item menu-item-projects">
           <a href="/projects" rel="section">
             
-            Projects
+            项目
           </a>
         </li>
       
@@ -224,7 +224,7 @@
         <li class="menu-item menu-item-gallery">
           <a href="/gallery" rel="section">
             
-            Gallery
+            图库
           </a>
         </li>
       
@@ -232,7 +232,7 @@
         <li class="menu-item menu-item-map">
           <a href="/Map" rel="section">
             
-            Map
+            足迹
           </a>
         </li>
       
@@ -240,7 +240,7 @@
         <li class="menu-item menu-item-channel">
           <a href="/Channel" rel="section">
             
-            Channel
+            视频频道
           </a>
         </li>
       
@@ -351,6 +351,7 @@
 <iframe width="560" height="315" src="https://www.youtube.com/embed/WSSkm17V35U" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <p>A Unity system that provides interactive visualization for time sequence graph data in virtual reality. Height suggests time, each layer of graph is stacked up to form floating islands and each island represents different clustters.<br>一个基于虚拟现实技术的交互式的时序图可视化的Unity工具，高度暗示了时间，每一时间刻度的图一层层得堆叠起来形成了浮空岛，不同的岛屿表示不同的分类。</p>
+<p>repo: <a href="https://github.com/bjason/FloatingIsland" target="_blank" rel="noopener">https://github.com/bjason/FloatingIsland</a></p>
 </details>
 
 <details>
@@ -387,6 +388,9 @@
 
           
 
+  
+    <div class="comments" id="comments">
+    </div>
   
 
 
@@ -679,6 +683,28 @@
 
 
 
+
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail';
+    guest = guest.split(',').filter(item=>{
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: false,
+        notify: false,
+        appId: 'drjbdjfyaSNdGyqe2mLwBhbp-gzGzoHsz',
+        appKey: '9l2u4bbtGMysmQpW3vHzmWta',
+        placeholder: 'Comment',
+        avatar:'hide',
+        guest_info:guest,
+        pageSize:'10' || 10,
+    });
+  </script>
 
 
 
@@ -1045,4 +1071,5 @@
 
   
 
-<script async>window.onload=function(){var a=document.createElement('script'),b=document.getElementsByTagName('script')[0];a.type='text/javascript',a.async=!0,a.src='/sw-register.js?v='+Date.now(),b.parentNode.insertBefore(a,b)};</script></body></html>
+</body>
+</html>

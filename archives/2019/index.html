@@ -208,7 +208,7 @@
         <li class="menu-item menu-item-projects">
           <a href="/projects" rel="section">
             
-            Projects
+            项目
           </a>
         </li>
       
@@ -216,7 +216,7 @@
         <li class="menu-item menu-item-gallery">
           <a href="/gallery" rel="section">
             
-            Gallery
+            图库
           </a>
         </li>
       
@@ -224,7 +224,7 @@
         <li class="menu-item menu-item-map">
           <a href="/Map" rel="section">
             
-            Map
+            足迹
           </a>
         </li>
       
@@ -232,7 +232,7 @@
         <li class="menu-item menu-item-channel">
           <a href="/Channel" rel="section">
             
-            Channel
+            视频频道
           </a>
         </li>
       
@@ -956,6 +956,28 @@
 
 
 
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail';
+    guest = guest.split(',').filter(item=>{
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: false,
+        notify: false,
+        appId: 'drjbdjfyaSNdGyqe2mLwBhbp-gzGzoHsz',
+        appKey: '9l2u4bbtGMysmQpW3vHzmWta',
+        placeholder: 'Comment',
+        avatar:'hide',
+        guest_info:guest,
+        pageSize:'10' || 10,
+    });
+  </script>
+
 
 
   
@@ -1321,4 +1343,5 @@
 
   
 
-<script async>window.onload=function(){var a=document.createElement('script'),b=document.getElementsByTagName('script')[0];a.type='text/javascript',a.async=!0,a.src='/sw-register.js?v='+Date.now(),b.parentNode.insertBefore(a,b)};</script></body></html>
+</body>
+</html>
