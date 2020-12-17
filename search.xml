@@ -1,6 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>211216</title>
+    <url>/2020/12/16/211216/</url>
+    <content><![CDATA[<p>更新：</p>
+<ul>
+<li>增加广播，以及优化相应的主页展示（不显示标题以及可点击，重写index.swig的代码逻辑）、广播categories展示的页面（不展示标题而是广播内容，重写categori.swig的代码逻辑）。</li>
+<li>增加评论区，使用valine+LeanCloud。</li>
+</ul>
+]]></content>
+      <categories>
+        <category>broadcast</category>
+      </categories>
+  </entry>
+  <entry>
     <title>2020年最好的21支音乐录影带</title>
     <url>/2020/12/11/bestMV2020/</url>
     <content><![CDATA[<center>
@@ -141,14 +154,6 @@
 <p>亚当和夏娃吃了他们的第一颗苹果后，开始知道善恶，而Phoebe Bridgers吃下了儿时的自己抛来的苹果，代表着她无忧无虑的童年结束了，她开始知晓另一件事，那就是死亡。之后的种种画面描绘了她对于重复日程的接受和迈向死亡的顺从：只剩躯壳、行尸走肉的骷髅装，单一乏味的一衣柜衣服，被生活的死水所困窘而窒息挣扎，以及一口苹果下肚后，被黑白无常押送的不归之途。这种意识到生命残酷的尤里卡时刻来得就是这么漫不经心，坐在奔向终点的车上，Phoebe随口对镜头倾诉着一些琐事，讲起听着的音乐、窗外的景色，企图用细碎的生命瞬间消解存在的无意义，冷面对待生活的荒诞感。但冷面终究是一种假装，车停下来时，她转身开始逃脱这一切——在一个<a href="https://www.stereogum.com/2086915/phoebe-bridgers-interview-punisher-conor-oberst-1975-boygenius/interviews/footnotes-interview/" target="_blank" rel="noopener">采访</a>中，Phoebe说她想尝试用这样一首歌做专辑的结尾，一支曲风模糊的尖叫/金属音乐，用前面的folk不断递进，最终迎来三重意义上的爆发。Phoebe做到了，I Know The End就是这首歌，导演Alissa Torvinen用极为空旷的体育馆呈现了这个“末日般的outro”，在逐渐离开的冷漠人群里，Phoebe走向了手舞足蹈的年迈的自己。她和死亡和解了，通过音乐——一点也不奇怪。</p>
 <p>在第三段verse里，Phoebe说她看到了<a href="https://www.sfgate.com/bayarea/article/Falcon-rocket-SpaceX-strange-light-Elon-Musk-13290064.php" target="_blank" rel="noopener">2年前天空中SpaceX飞船发射的痕迹</a>，对于所有见过那景象的人，这句歌词都会立即把你这两年的时光拍扁成一张纸，让那个秋日夜晚的一切都触手可及。可能这时候你才会意识到，生命是空心的，但你还可以逃脱。</p>
 ]]></content>
-      <categories>
-        <category>音乐</category>
-      </categories>
-      <tags>
-        <tag>乐评</tag>
-        <tag>音乐录影带</tag>
-        <tag>评论</tag>
-      </tags>
   </entry>
   <entry>
     <title>翻译 Pitchfork 乐评 Fiona Apple - Fetch the Bolt Cutters</title>
@@ -191,13 +196,6 @@
 <p>评分：10/10</p>
 <p>原文链接：<a href="https://pitchfork.com/reviews/albums/fiona-apple-fetch-the-bolt-cutters/" target="_blank" rel="noopener">https://pitchfork.com/reviews/albums/fiona-apple-fetch-the-bolt-cutters/</a></p>
 ]]></content>
-      <categories>
-        <category>音乐</category>
-      </categories>
-      <tags>
-        <tag>乐评</tag>
-        <tag>翻译</tag>
-      </tags>
   </entry>
   <entry>
     <title>智能纪元</title>
@@ -286,12 +284,6 @@
 <p>2109年6月3日14:33:19 是否删除该条目？确认，取消。</p>
 <p>2109年6月3日14:33:25 确认。</p>
 ]]></content>
-      <categories>
-        <category>文字</category>
-      </categories>
-      <tags>
-        <tag>小说</tag>
-      </tags>
   </entry>
   <entry>
     <title>Long video recorded by Canon EOS appears 0 byte on Windows, cannot import them on macOS. The only correct solution</title>
@@ -305,9 +297,6 @@
 <p><img src="/img/EOS.png" alt="number"></p>
 <p>After installation, open Canon EOS Utility (or Canon EOS Utility 2). Then connect the camera to the computer, and make sure the camera is on and in connection mode. The software should automatically recognize the camera. Select the videos to be imported and wait till it is done. (<a href="https://www.canon.com.cn/special/ds_abcbook/application01.html" target="_blank" rel="noopener">see the official document</a>) </p>
 ]]></content>
-      <categories>
-        <category>教程</category>
-      </categories>
   </entry>
   <entry>
     <title>佳能录制的视频连接电脑只有0字节，macOS无法导入的解决方案</title>
@@ -321,9 +310,6 @@
 <p><img src="/img/EOS.png" alt="序列号"></p>
 <p>安装后打开Canon EOS Utility（或者Canon EOS Utility 2），连接单反到电脑，并确保相机开启并进入连接模式，软件应该会自动识别到相机，随后点击开始图像下载并选择需要导入的视频，等待导入即可。（<a href="https://www.canon.com.cn/special/ds_abcbook/application01.html" target="_blank" rel="noopener">参阅官方文档</a>）</p>
 ]]></content>
-      <categories>
-        <category>教程</category>
-      </categories>
   </entry>
   <entry>
     <title>MetroUI做对了什么</title>
@@ -335,12 +321,6 @@
 <p>被很多人所诟病的 Metro UI 过于统一的设计语言，“所有 App 都长一个样”也是基于这个逻辑：各个 App 看起来一样是因为形式并不不重要，重要的不是 App 本身，而是传递的信息。</p>
 <p>而实现上，微软想到了一个绝佳的隐喻：那就是<b>窗口</b>。磁贴是窗口，显示屏是窗口。</p>
 ]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>设计</tag>
-      </tags>
   </entry>
   <entry>
     <title>我是如何用Hexo/next主题创造这个博客的</title>
@@ -349,13 +329,6 @@
 <h1 id="建站"><a href="#建站" class="headerlink" title="建站"></a>建站</h1><h1 id="个性化"><a href="#个性化" class="headerlink" title="个性化"></a>个性化</h1><h1 id="美化"><a href="#美化" class="headerlink" title="美化"></a>美化</h1><p>之前我也在豆瓣日志和简书、甚至最开始的Lofter上持续地更新一些文章，豆瓣主要是音乐/电影/文学之类文艺的内容，简书因为支持 Markdown、方便外链分享和较好的阅读设计常被我用来发一些技术相关的内容，但我最开始有想建一个博客的想法主要是因为还是比较希望有个可以自定义排版的博客，以及希望有个平台可以综合一下我散落互联网各处的痕迹。排版对阅读文字时的影响很大，特别是文学性的作品时，之前很喜欢hansey的</p>
 <p>==To be updated==</p>
 ]]></content>
-      <categories>
-        <category>教程</category>
-      </categories>
-      <tags>
-        <tag>前端</tag>
-        <tag>Hexo</tag>
-      </tags>
   </entry>
   <entry>
     <title>&lt;p style=&quot;font-size:180px;line-height:100%;&quot;&gt;日光&lt;br/&gt;倾城&lt;/p&gt;</title>
@@ -600,13 +573,6 @@
 <hr>
 <p>原作于2014年，后经删改。此文灵感来源于 <a href="https://www.youtube.com/watch?v=EN9auBn6Jys" target="_blank" rel="noopener">Cibo Matto - Sugar Water 的 MV</a>，目前正在将此文改编，套用相同的一正序一倒叙的双线叙事结构。敬请期待。</p>
 ]]></content>
-      <categories>
-        <category>文字</category>
-      </categories>
-      <tags>
-        <tag>创作</tag>
-        <tag>小说</tag>
-      </tags>
   </entry>
   <entry>
     <title>王菊刷屏说白了就是又一次酷儿文化入侵罢了</title>
@@ -628,9 +594,6 @@
 <p>不过我最后还要套上那句老话，总的来说是好事，对酷儿们来说，接触比不接触强，有接触才能有了解。我可不希望出柜后第一个问题就是“你是攻还是受”——这种主流文化里对刻板同性恋形象的定义什么时候才是个完啊？对“女权论”者来说，商业市场看纸面数据行事，王菊证明了现代女性对市场的吸睛力，而不是一个又一个流水线产品嘟起嘴“一起学猫叫”，反正我是要吐了。</p>
 <p>原作于2018年6月2日，为vice供稿。</p>
 ]]></content>
-      <categories>
-        <category>评论</category>
-      </categories>
   </entry>
   <entry>
     <title>&lt;p style=&quot;font-size:180px;line-height:100%;&quot;&gt;成都&lt;br/&gt;淹没&lt;/p&gt;</title>
@@ -729,13 +692,6 @@
 <p>大雨倾盆，城市像没有下水道一般向下吞没。</p>
 <p>原作于2017年5月15日</p>
 ]]></content>
-      <categories>
-        <category>文字</category>
-      </categories>
-      <tags>
-        <tag>创作</tag>
-        <tag>小说</tag>
-      </tags>
   </entry>
   <entry>
     <title>All My Friends是如何创造苦乐参半的听感的</title>
@@ -761,14 +717,6 @@
 <p><span id="ref3">[注3]: 以上均为歌词，“假装”指歌词”I know it gets tired, but it’s better when we pretend”，“转眼又五年”指” You spent the first five years trying to get with the plan / And the next five years trying to be with your friends again”，“the memory of our betters”指” Then it’s the memory of our betters / That are keeping us on our feet”。</span></p>
 <p>原文：<a href="https://music.douban.com/review/12312187/" target="_blank" rel="noopener">https://music.douban.com/review/12312187/</a></p>
 ]]></content>
-      <categories>
-        <category>音乐</category>
-      </categories>
-      <tags>
-        <tag>乐评</tag>
-        <tag>音乐</tag>
-        <tag>创作</tag>
-      </tags>
   </entry>
   <entry>
     <title>翻译 Pitchfork 乐评 Miss Anthropocene - Grimes</title>
@@ -793,13 +741,6 @@
 <p>译者的话：</p>
 <p>虽然这篇我觉得写得不是很好，但是最后一段却非常精彩，同时也清楚地点出了这张专辑的问题：它的价值观太特权阶级了，用人类最大的威胁——环境变化——来满足自己的儒犬主义的宇宙观。文章模棱两可地解读了这种诚恳到不诚恳的转变的原因：多次提到Musk/流行歌手的字眼似乎是想指明这种名利让她的这次发声沦为特权阶级(Musk)的宣传工具，第一遍看完之后非常好奇是什么驱使了pitchfork把这张专辑给予Best New Music的嘉奖，看完最后一段，结合pitchfork也是宣传工具的事实，我觉得有理由认为Azealia Banks所言非虚。</p>
 ]]></content>
-      <categories>
-        <category>音乐</category>
-      </categories>
-      <tags>
-        <tag>乐评</tag>
-        <tag>翻译</tag>
-      </tags>
   </entry>
   <entry>
     <title>Pitchfork乐评翻译 Tame Impala - The Slow Rush</title>
@@ -822,13 +763,6 @@
 <p>Parker可能想在他职业生涯的另一方面成为Max Martin式的人（<a href="https://www.billboard.com/articles/columns/rock/8549566/tame-impala-kevin-parker-billboard-cover-story-interview-2020），但在他自己的乐队里，他仍然是一个追求内心平静的声学最大化的内向者。他似乎把它放在了专辑中最安静的时刻，也就是最令人叫绝的最后七分钟One" target="_blank" rel="noopener">https://www.billboard.com/articles/columns/rock/8549566/tame-impala-kevin-parker-billboard-cover-story-interview-2020），但在他自己的乐队里，他仍然是一个追求内心平静的声学最大化的内向者。他似乎把它放在了专辑中最安静的时刻，也就是最令人叫绝的最后七分钟One</a> More Hour。“As long as I can, as long as I can spend some time alone,”他在稳定的钢琴和弦上唱道，这是他所有唱片中最赤裸的时刻(虽然他的vocal仍然淹没在回音音效中)。突然间，紧张的、飘动的琴弦和天启般的、节奏沉重的吉他出现了，接着是另一段粗糙的riff，击鼓声震耳欲聋，穆格合成器向四面八方开火。其效果就像多个YouTube视频同时意外播放，一个不安分的大脑制造出华丽的混乱——这是一个真正的完美主义者的作品。</p>
 <p>评分：8.0<br>原文链接：<a href="https://pitchfork.com/reviews/albums/tame-impala-the-slow-rush/" target="_blank" rel="noopener">https://pitchfork.com/reviews/albums/tame-impala-the-slow-rush/</a> </p>
 ]]></content>
-      <categories>
-        <category>音乐</category>
-      </categories>
-      <tags>
-        <tag>乐评</tag>
-        <tag>翻译</tag>
-      </tags>
   </entry>
   <entry>
     <title>Destroyer Have We Met Pitchfork乐评翻译</title>
@@ -849,13 +783,6 @@
 <p>然而，他仍然可以瞄准心脏。在他写过的最好的歌曲之一《乌鸦》(The Raven)中，歌曲的基调带有个人色彩，甚至有些怀旧。也就是说，这正是我们所期待的来自我们50岁左右的创作大师的东西——他自己扭捏地说着:趁着你还可以的时候，把握住当下。“出来吧，出来吧，不管你在哪里/但你不会/死人不会出来，”他警告说。这句话本身就足以让人不寒而栗，但他接着写道:“死人扭曲着咆哮着/在一个看不见的世界里/死亡的壮观景象令人窒息……令人窒息。”现在，我们又回到了他的领域——一个不太可能的副歌，几个双关语——他带领我们离开我们所知道的世界，走向一些奇怪的来世，那里的观众和我们一样困惑，舞台上的艺术家听起来像是在自己家中一般。</p>
 <p>评分：8.5<br>原文： <a href="https://pitchfork.com/reviews/albums/destroyer-have-we-met/" target="_blank" rel="noopener">https://pitchfork.com/reviews/albums/destroyer-have-we-met/</a> </p>
 ]]></content>
-      <categories>
-        <category>音乐</category>
-      </categories>
-      <tags>
-        <tag>乐评</tag>
-        <tag>翻译</tag>
-      </tags>
   </entry>
   <entry>
     <title>Pitchfork 2010s单曲榜解读</title>
@@ -878,9 +805,6 @@
 <p>随后的几十名，也对音乐产业其他微妙的变化进行了总结：Everything Is Embarrassing和Video Games是这个十年贯穿始终的丧文化（demotivational culture）的最好作品，Work对应雷鬼的兴起，Love It If We Made It是混乱的现实白描，Midnight City的synthpop、Rosalía的非英语文化入侵、Drone Bomb Me的战争话题、Bodak Yellow的Trap兴起等等。所以排名71的Someone Like You一定比77名的Ultralight Beam好吗？当然不是，但是十年榜的总结里，Adele作为最大的bug级影响艺人，缺了才不正常。</p>
 <p>Reference:<br><a href="https://www.businessinsider.com/hip-hop-passes-rock-most-popular-music-genre-nielsen-2018-1" target="_blank" rel="noopener">https://www.businessinsider.com/hip-hop-passes-rock-most-popular-music-genre-nielsen-2018-1</a></p>
 ]]></content>
-      <categories>
-        <category>音乐</category>
-      </categories>
   </entry>
   <entry>
     <title>2010年代最好的65个MV</title>
@@ -1037,14 +961,6 @@
 <p>做一件快乐且正确的事：再看一遍这个录影带。</p>
 <p>原文：<a href="https://www.douban.com/note/745655870/" target="_blank" rel="noopener">https://www.douban.com/note/745655870/</a></p>
 ]]></content>
-      <categories>
-        <category>音乐</category>
-      </categories>
-      <tags>
-        <tag>乐评</tag>
-        <tag>音乐</tag>
-        <tag>音乐录影带</tag>
-      </tags>
   </entry>
   <entry>
     <title>翻译 Norman F**king Rockwell Pitchfork The 50 Best Albums of 2019 乐评</title>
@@ -1062,13 +978,6 @@
 <p>Norman Fucking Rockwell! 是一张让人感觉像是精选集的专辑。未来的几代人将会惊奇地发现，有一张专辑里同时有《Venice Bitch》和《Mariners Apartment Complex》，还有《hope is a dangerous thing for a woman like me to have - but i have it》。他们会以难以置信的口吻嘲笑这个事实：Lana Del Rey曾一度不被视为“万劫不复世界里的桂冠诗人”。</p>
 <p>原文：<a href="https://pitchfork.com/features/lists-and-guides/best-albums-2019/" target="_blank" rel="noopener">https://pitchfork.com/features/lists-and-guides/best-albums-2019/</a></p>
 ]]></content>
-      <categories>
-        <category>音乐</category>
-      </categories>
-      <tags>
-        <tag>乐评</tag>
-        <tag>翻译</tag>
-      </tags>
   </entry>
   <entry>
     <title>使用D3.JS进行文字渐变-text-gradient-effect-in-d3.js</title>
@@ -1079,13 +988,6 @@
 <p>最终效果如下：</p>
 <p>Showcase:<br><img src="https://upload-images.jianshu.io/upload_images/25254-5525f58eb7645ffa.gif" alt="ezgif-2-d46559584957.gif"><br>如果不动请点原图</p>
 ]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>前端</tag>
-        <tag>D3.js</tag>
-      </tags>
   </entry>
   <entry>
     <title>2019年最好的20个音乐录影带</title>
@@ -1151,13 +1053,6 @@
 <p>欢迎来到娱乐至死的年代。</p>
 <p>原文：<a href="https://www.douban.com/note/742385912/" target="_blank" rel="noopener">https://www.douban.com/note/742385912/</a></p>
 ]]></content>
-      <categories>
-        <category>音乐</category>
-      </categories>
-      <tags>
-        <tag>乐评</tag>
-        <tag>音乐录影带</tag>
-      </tags>
   </entry>
   <entry>
     <title>Windows-10-1809更新后窗口边框变粗解决办法</title>
@@ -1167,12 +1062,6 @@
 <p>解决方法：在设置-主题中，重新选择你的主题即可。</p>
 <p>source: <a href="https://www.reddit.com/r/Windows10/comments/9xa6vh/window_borders_extremely_thick/" target="_blank" rel="noopener">https://www.reddit.com/r/Windows10/comments/9xa6vh/window_borders_extremely_thick/</a></p>
 ]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>Windows</tag>
-      </tags>
   </entry>
   <entry>
     <title>推动了2010年代的80年代复古潮</title>
@@ -1198,14 +1087,6 @@
 </ul>
 <p>原文：<a href="https://music.douban.com/review/10618307/" target="_blank" rel="noopener">https://music.douban.com/review/10618307/</a></p>
 ]]></content>
-      <categories>
-        <category>音乐</category>
-      </categories>
-      <tags>
-        <tag>乐评</tag>
-        <tag>音乐</tag>
-        <tag>创作</tag>
-      </tags>
   </entry>
   <entry>
     <title>2010年代我最喜欢的200首歌 My favorite tracks of 2010s</title>
@@ -1220,12 +1101,6 @@
 
 <p><img src="/img/favSongs2010s.jpg" alt=""></p>
 ]]></content>
-      <categories>
-        <category>音乐</category>
-      </categories>
-      <tags>
-        <tag>音乐</tag>
-      </tags>
   </entry>
   <entry>
     <title>从看见到出片 一些自己的摄影思考</title>
@@ -1289,14 +1164,6 @@
 <p>就是因为想传递的情绪截然不同。因此修图时要根据情绪来选择修图的方向，并和画面内容自洽，否则只是乱P，没有说服力。<br>调色时我比较常用的工具是 VSCO 和 Adobe Lightroom mobile。</p>
 <p>原作于2019年6月8日</p>
 ]]></content>
-      <categories>
-        <category>教程</category>
-      </categories>
-      <tags>
-        <tag>摄影</tag>
-        <tag>创作</tag>
-        <tag>教程</tag>
-      </tags>
   </entry>
   <entry>
     <title>&lt;p style=&quot;font-size:180px;line-height:100%;&quot;&gt;英雄&lt;/p&gt;</title>
@@ -1321,13 +1188,6 @@
 <p>或许命运早已掘好了坟墓，我们都在奋不顾身地跳进生活。</p>
 <p>原作于2018年</p>
 ]]></content>
-      <categories>
-        <category>文字</category>
-      </categories>
-      <tags>
-        <tag>创作</tag>
-        <tag>散文</tag>
-      </tags>
   </entry>
   <entry>
     <title>2018年我最喜欢的11个音乐录影带</title>
@@ -1361,16 +1221,6 @@
 <h2 id="1-This-is-America—Childish-Gambino"><a href="#1-This-is-America—Childish-Gambino" class="headerlink" title="1. This is America—Childish Gambino"></a>1. This is America—Childish Gambino</h2><p>今年不是个MV的大年，但Childish Gambino的This is America是为数不多引起广泛讨论的严肃音乐产品。MV鞭笞了美国现存的种种问题，枪支、种族、事不关己的网络一代等等，虽然大多数话题可以说是老生常谈，但是一镜到底的拍摄手法、叙事安排和讨论度都让这个MV毫无疑问地成为2018年音乐录影带的最佳脚注。</p>
 <p>榜单链接：<a href="https://www.youtube.com/playlist?list=PLgnqnloKbnvJLHQxh_eDLbw0evTJg5jwa" target="_blank" rel="noopener">https://www.youtube.com/playlist?list=PLgnqnloKbnvJLHQxh_eDLbw0evTJg5jwa</a></p>
 ]]></content>
-      <categories>
-        <category>音乐</category>
-      </categories>
-      <tags>
-        <tag>乐评</tag>
-        <tag>音乐</tag>
-        <tag>创作</tag>
-        <tag>音乐录影带</tag>
-        <tag>总结</tag>
-      </tags>
   </entry>
   <entry>
     <title>我会在什么时候想你</title>
@@ -1386,9 +1236,6 @@
 <p>你不在我身边的时候我会想你<br>想你在我的身边<br>但是即便你在我身边了 我依旧会想你<br>想你能一直在我的身边<br>我的想念像只调皮的猫、不听话的狗、南半球的蝴蝶、魔术师帽子里的兔子<br>可能从生活的每个角落弹出来<br>附到我的怀中<br>我发呆的时候会想你<br>我洗澡的时候会想你<br>我无论无何都会想你</p>
 <p>唔……在我生命无数的瞬间<br>这都是<br>想你的时候啊</p>
 ]]></content>
-      <categories>
-        <category>生活</category>
-      </categories>
   </entry>
   <entry>
     <title>【Python】安装pycocotools错误</title>
@@ -1430,12 +1277,6 @@
 
 <p>Reference: <a href="https://github.com/matterport/Mask_RCNN/issues/6" target="_blank" rel="noopener">https://github.com/matterport/Mask_RCNN/issues/6</a></p>
 ]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>Python</tag>
-      </tags>
   </entry>
   <entry>
     <title>用Word输入公式最方便美观的方法，跟Latex有一拼，附快捷对照表</title>
@@ -1546,13 +1387,6 @@
 </ul>
 <p>原文：<a href="https://www.jianshu.com/p/9e4e2e561789" target="_blank" rel="noopener">https://www.jianshu.com/p/9e4e2e561789</a></p>
 ]]></content>
-      <categories>
-        <category>教程</category>
-      </categories>
-      <tags>
-        <tag>教程</tag>
-        <tag>Word</tag>
-      </tags>
   </entry>
   <entry>
     <title>最直白的微软官方远程桌面Remote-Desktop-APP使用方法</title>
@@ -1564,12 +1398,6 @@
 <li>点击手机端右上角的加号，选择桌面，按照上图中的PC name和User Name填写即可</li>
 </ol>
 ]]></content>
-      <categories>
-        <category>教程</category>
-      </categories>
-      <tags>
-        <tag>教程</tag>
-      </tags>
   </entry>
   <entry>
     <title>简单的方法实现spotify和网易云音乐、QQ音乐歌单互导</title>
@@ -1610,15 +1438,6 @@
 <li>由于版权原因，部分歌曲spotify不能添加。</li>
 </ul>
 ]]></content>
-      <categories>
-        <category>教程</category>
-      </categories>
-      <tags>
-        <tag>音乐</tag>
-        <tag>教程</tag>
-        <tag>文档</tag>
-        <tag>技术</tag>
-      </tags>
   </entry>
   <entry>
     <title>VS-Code中code-runner运行Python程序[Done]-exited-with-code=null</title>
@@ -1629,13 +1448,6 @@
 <p>或者</p>
 <figure class="highlight json"><table><tr><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    <span class="attr">"code-runner.executorMap.python"</span>: <span class="string">"python -u"</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 ]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>Python</tag>
-        <tag>VS Code</tag>
-      </tags>
   </entry>
   <entry>
     <title>【Python】使用urllib2时出现400-Bad-Request错误</title>
@@ -1653,12 +1465,6 @@
 </li>
 </ol>
 ]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>Python</tag>
-      </tags>
   </entry>
   <entry>
     <title>【PL/SQL错误】ORA-12154: TNS: could not resolve the connect identifier specified</title>
@@ -1671,12 +1477,6 @@
 <p>数据库：Oracle Instant Client</p>
 <p>解决方法：配置好ora文件，注意ora文件中的缩进使用tab而不是空格。</p>
 ]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>PL/SQL</tag>
-      </tags>
   </entry>
   <entry>
     <title>如何在WSL子系统访问Windows的文件 access-windows-files-from-WSL</title>
@@ -1691,13 +1491,6 @@
 </blockquote>
 <p>reference：<br><a href="https://blog.csdn.net/zhengxiangwen/article/details/50625986" target="_blank" rel="noopener">https://blog.csdn.net/zhengxiangwen/article/details/50625986</a></p>
 ]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>Windows</tag>
-        <tag>WSL</tag>
-      </tags>
   </entry>
   <entry>
     <title>翻译 Pitchfork Best New Track Perfect Places - Lorde</title>
@@ -1716,13 +1509,6 @@
 <p><em>原文*：<br>Imperfection is always a virtue in <a href="http://pitchfork.com/artists/31696-lorde/" target="_blank" rel="noopener">Lorde</a>’s world—whether it’s the “<a href="http://pitchfork.com/news/72821-lordes-new-album-tells-the-story-of-one-house-party/" target="_blank" rel="noopener">incorrect songwriting</a>” of her fantastically nonlinear banger “Green Light,” her unchosen solitude on “Liability,” or the manic expressive dancing these new songs inspire within her. She <a href="http://pitchfork.com/news/72821-lordes-new-album-tells-the-story-of-one-house-party/" target="_blank" rel="noopener">has said</a> that her upcoming second album, *Melodrama,</em> charts the trajectory of a single house party, which is a little funny in this context—the searching introspection of these songs doesn’t quite scream “rager” yet. But Lorde is a songwriter who still vividly celebrates out-of-step self-possession.<br>Where does the party end? <em>Melodrama</em> closer “Perfect Places” cuts to the 3 a.m. heart-to-heart. The track slides in on a spacious, charcoal beat à la <em>Pure Heroine</em>’s “Team,” but reality has grown crueler since then. In “Perfect Places,” Lorde’s heroes are dying; she can’t stand the headlines; the weather is disagreeable. The world around is becoming less recognizable, and how to cope? “Now I can’t stand to be alone,” she sings.<br>If there is an argument to be made for partying as a mechanism of survival, this Lorde song bolsters it. “Perfect Places” is about the extents we go to in order to feel more alive, but it spares no details of “graceless,” grotesque real life—the consequences of “nights spent off our faces.” The promise of the house party is so rarely fulfilled: At any age, you are unlikely to find utopia in a drink and a stranger. By the end of the song, with the raspy inflection of experience, Lorde asks, “What the fuck are perfect places anyway?” There are none. But the path to figuring that out comes close.</p>
 <p><em>原文地址：<a href="http://pitchfork.com/reviews/tracks/19166-lorde-perfect-places/​" target="_blank" rel="noopener">http://pitchfork.com/reviews/tracks/19166-lorde-perfect-places/​</a></em></p>
 ]]></content>
-      <categories>
-        <category>音乐</category>
-      </categories>
-      <tags>
-        <tag>乐评</tag>
-        <tag>翻译</tag>
-      </tags>
   </entry>
   <entry>
     <title>&lt;p style=&quot;font-size:150px;line-height:100%;&quot;&gt;童年不是&lt;br/&gt;童话&lt;/p&gt;</title>
@@ -1744,13 +1530,6 @@
 <p>===</p>
 <p>本来是一篇初三的作文，今天偶然翻出来了，改了改。觉得自己再也写不出原来这么有灵气的东西了。</p>
 ]]></content>
-      <categories>
-        <category>文字</category>
-      </categories>
-      <tags>
-        <tag>创作</tag>
-        <tag>散文</tag>
-      </tags>
   </entry>
   <entry>
     <title>你的朋友圈将是马老板的新淘金地</title>
@@ -1779,12 +1558,6 @@
 <p>#4 Wonderful Life - Gwen Stefeni</p>
 <p>#5 Lotus Intro - Christina Aguilera</p>
 ]]></content>
-      <categories>
-        <category>评论</category>
-      </categories>
-      <tags>
-        <tag>科技</tag>
-      </tags>
   </entry>
   <entry>
     <title>这或许就是你理想中的智能手表</title>
@@ -1803,12 +1576,6 @@
 <p>如果说智能手表提升了接收提醒的实时性的话，那么Google Glass可谓更上一层楼，消息将被直接推送到你眼前。然而，由于Google Glass与大众价值观有较大的冲突，关于其合理性的争论自诞生起就没有停止过。时至今日，Google Glass已经过完两周岁的生日，然而，收到的却是越来越多的公共场合的禁令。Google Glass代表了听上去更为科幻的虚拟现实技术所在的境地，虽然虚拟现实技术已经迎来了首个消费者市场的产品，但仍不成现象。</p>
 <p>可穿戴设备加快了我们对于信息获取的速度，而虚拟现实技术加深了我们对于信息了解的深度，人们常说，这是个大数据的时代，唯一不被大数据浪潮吞没的办法，就是永远跑在浪潮的前头。</p>
 ]]></content>
-      <categories>
-        <category>评论</category>
-      </categories>
-      <tags>
-        <tag>科技</tag>
-      </tags>
   </entry>
   <entry>
     <title>三星与Oculus合作：这次三星可以成为吃得最香的那个吗</title>
@@ -1828,12 +1595,6 @@
 <p>在经历手机业务面临前所未有的下滑后，三星似乎开始抓紧更多的救命索。不仅决定精简产品线，更是放出了许多黑科技，似乎想重新让消费者认为，三星仍是个具有强大创新力的公司。不论是造型古怪的Galaxy S4 Edge，还是三星自家的操作系统TIZEN，都多多少少透出些三星的急迫，前者甚至被媒体贬为“为了成为领头人而不顾用户体验”。</p>
 <p>在智能手表领域布局Galaxy Gear之后，在更多新兴领域进行布局也就合理了。三星并无理由贸然闯进这个还很不成熟的领域，这更像是孤注一掷。然而，冒险或许在很大程度上是有益的，站在三星的角度，弥补了低迷的财报对公司带来的负面印象，站在整个市场，Gear VR是第一款消费市场级别的虚拟现实硬件设备。不过目前来看，实际体验的效果并不理想，佩戴过久会导致机身发热，而官方给出的办法只是减少功能的使用。同时，三星对于索尼提出的技术上的问题该如何处理也值得期待，诸如电池续航、沉浸式体验如何等等，而在这些方面，索尼进行的探索显然多于三星。只可惜，三星往往都只是在努力成为第一个吃螃蟹的，而往往不是吃的最香的那个。</p>
 ]]></content>
-      <categories>
-        <category>评论</category>
-      </categories>
-      <tags>
-        <tag>科技</tag>
-      </tags>
   </entry>
   <entry>
     <title>HTC发布会：摸不着头脑的观众和HTC自己</title>
@@ -1863,12 +1624,6 @@
 <p>Porcelain- Moby</p>
 <p>Basic Space- TheXX</p>
 ]]></content>
-      <categories>
-        <category>评论</category>
-      </categories>
-      <tags>
-        <tag>科技</tag>
-      </tags>
   </entry>
   <entry>
     <title>Build 2015：十亿分之一的你我他</title>
@@ -1895,12 +1650,6 @@
 <p>#4 How You GetThis Girl – Taylor Swift</p>
 <p>#5 Poison – Waxahachee</p>
 ]]></content>
-      <categories>
-        <category>评论</category>
-      </categories>
-      <tags>
-        <tag>科技</tag>
-      </tags>
   </entry>
   <entry>
     <title>豆瓣2.0：它的新启程</title>
@@ -1924,12 +1673,6 @@
 <p>对于移动场景下的内容分享、消费来说，豆列其实是一种非常好的形式：首先，豆列是一种经过大量用户UGC筛选的清单，本身内容质量较高，可信度也强；其次，移动场景下，用户阅读更具备目的性，因此围绕某种主题而创建的豆列，十分适合移动设备上阅读；再者，对于豆瓣本身来说，豆列地位的突出能够降低人的决策难度，适合移动电商场景，也即意味着有助于豆瓣商业化的步伐。唯一存在的问题是：豆瓣该如何把曾经的流量转化成优质的豆列内容。</p>
 <p>当然，依靠豆瓣积累多年的用户活跃度，这并不是个难题。</p>
 ]]></content>
-      <categories>
-        <category>评论</category>
-      </categories>
-      <tags>
-        <tag>科技</tag>
-      </tags>
   </entry>
   <entry>
     <title>Spotify与星巴克合作：音乐圈的大事 而不是咖啡圈的</title>
@@ -1952,12 +1695,6 @@
 <p>Girls – the 1975</p>
 <p>Porcelain – Moby</p>
 ]]></content>
-      <categories>
-        <category>评论</category>
-      </categories>
-      <tags>
-        <tag>科技</tag>
-      </tags>
   </entry>
   <entry>
     <title>Spotify与星巴克合作：音乐圈的大事 而不是咖啡圈的</title>
@@ -1984,12 +1721,6 @@
 <p>#4 Seasons(Waiting On You) - Future Islands</p>
 <p>#5 Put YourNumber In My Phone - Ariel Pink</p>
 ]]></content>
-      <categories>
-        <category>评论</category>
-      </categories>
-      <tags>
-        <tag>科技</tag>
-      </tags>
   </entry>
   <entry>
     <title>Hello by Facebook：脸书的统一战线策略</title>
@@ -2024,12 +1755,6 @@
 <p><a href="http://www.ifanr.com/505598" target="_blank" rel="noopener">http://www.ifanr.com/505598</a></p>
 <p><a href="http://www.cnbeta.com/articles/387969.htm" target="_blank" rel="noopener">http://www.cnbeta.com/articles/387969.htm</a></p>
 ]]></content>
-      <categories>
-        <category>评论</category>
-      </categories>
-      <tags>
-        <tag>科技</tag>
-      </tags>
   </entry>
   <entry>
     <title>Windows 10宣布入华</title>
@@ -2062,12 +1787,6 @@
 <p>#4 City – Lo-Fi-FNK</p>
 <p>#5 Time to Pretend -MGMT</p>
 ]]></content>
-      <categories>
-        <category>评论</category>
-      </categories>
-      <tags>
-        <tag>科技</tag>
-      </tags>
   </entry>
   <entry>
     <title>从MWC2015看2015</title>
@@ -2093,12 +1812,6 @@
 <p>#4 King - Years &amp; Years</p>
 <p>#5 Blind My Mind - Flunk</p>
 ]]></content>
-      <categories>
-        <category>评论</category>
-      </categories>
-      <tags>
-        <tag>科技</tag>
-      </tags>
   </entry>
   <entry>
     <title>失眠</title>
@@ -2113,11 +1826,5 @@
 <p>也曾在时间寸秒寸金的在校时间失眠，本就计划好的所剩无几的睡眠，明确的睡着又清晰地醒来，仿佛我是个出错的光盘，推入到睡觉的电脑中，却每每因为无法识别而被残忍地推出。夜很静，空气中的冷冽在暖气片上噼里啪啦地融化。本想听歌助战，但干净的夜晚让平日里深藏于耳机的某个角度的细节无可遁形，此后每每回忆，都觉得这是极为珍贵而舒服一次听音乐，所以甚至于产生了对失眠的向往。好不容易才在英语的五星阅读中萌发了困意，惊喜的是，第二天竟毫无困意，好似仅有的四个小时的睡眠是八个小时的浓汤宝，就连最最难熬的有机化学，我都是神情百倍地听完。</p>
 <p>说回来，前几天我究竟如何睡着的，终究还是没找到线索，否则，一定会详尽道来献给各位难兄难弟。 </p>
 ]]></content>
-      <categories>
-        <category>生活</category>
-      </categories>
-      <tags>
-        <tag>创作</tag>
-      </tags>
   </entry>
 </search>
