@@ -1,6 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>建站初衷</title>
+    <url>/2020/12/17/%E5%BB%BA%E7%AB%99%E5%88%9D%E8%A1%B7/</url>
+    <content><![CDATA[<p>文字平台数不胜数，我先后驻足过的就有lofter、点点、qing、简书、豆瓣日记、medium等等，作为文字分享它们都算是完成了任务，但是我隐隐约约还有个杂志梦，总想对自己写出来的东西掌控权甚至更多一点，lofter等轻博客有提供一些“主题”，有一些不错的——我没有在刻意标榜自己品味有多不凡——但是掌握力这个东西永远都是没有尽头的，看上的排版想再改一下边距改一下动画就毫无办法了。所以其实建站的最初动机只是想要把标题文字放大到一个夸张的程度，这是受一本初中时期深刻影响了我审美的一本杂志《文艺风赏》的启发，设计师hansey的排版让我久久不能忘怀：</p>
+<p><img src="https://pic2.zhimg.com/50/f1dee5c2e9167ff9be28ef3b6b5d17ec_hd.jpg" alt=""></p>
+<a id="more"></a>
+
+<p>我也想要我的文字用上这样的排版，写完<a href="https://bjason.github.io/2020/03/21/%E6%88%90%E9%83%BD%E6%B7%B9%E6%B2%A1/">《成都淹没》</a>之后这种欲望开始疯狂膨胀，最开始只是用word排一下版导出到PDF以保证传阅时格式不会乱掉，但是等到分享时，PDF终究是低效且打扰的，我要一种非侵入式的、被动式的展示窗，文字平台不可以，我试了一堆，大多数自由度几乎是0。经过一些搜索，我最终我找到的方法就是利用Github提供的Pages功能托管静态的网络，免费、高自定义度、无监管。这篇文章就汇总一下在hexo的next主题基础上，我做了哪些调整以及其实现。</p>
+<h1 id="渐变色home按钮"><a href="#渐变色home按钮" class="headerlink" title="渐变色home按钮"></a>渐变色home按钮</h1><p>博客的风格非常朴素，几乎只使用到了黑白灰，以防太多动效让读者分心，但是我还是希望有一个闷骚一点的跳脱一点的设计，于是借鉴了我很喜欢的zune的设计思路改造了单调的home按钮。</p>
+<p><img src="https://d2.alternativeto.net/dist/s/fef3737c-3a17-4248-bfc0-dcc8c180ce45_1_full.png?format=jpg&width=1600&height=1600&mode=min&upscale=false" alt=""></p>
+<p>实现上很简单，使用CSS自带的渐变即可，在<code>\themes\next\source\css\_custom\custom.styl</code>的末尾添加：</p>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-class">.gradient</span><span class="selector-pseudo">:hover</span>, <span class="selector-class">.post-body</span> <span class="selector-tag">p</span> <span class="selector-tag">a</span><span class="selector-pseudo">:hover</span> &#123;</span><br><span class="line">  <span class="attribute">color</span>: hotPink;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">@media</span> (<span class="attribute">-webkit-min-device-pixel-ratio:</span><span class="number">0</span>) &#123;</span><br><span class="line">  <span class="selector-class">.gradient</span> &#123;</span><br><span class="line">    <span class="attribute">background-color</span>: blank;</span><br><span class="line">    <span class="attribute">background-image</span>: <span class="built_in">-webkit-linear-gradient</span>(left, hotPink <span class="number">0%</span>, orange <span class="number">50%</span>, transparent <span class="number">50%</span>);</span><br><span class="line">    <span class="attribute">background-position</span>: <span class="number">100%</span> <span class="number">0</span>;</span><br><span class="line">    <span class="attribute">background-size</span>: <span class="number">200%</span> <span class="number">200%</span>;</span><br><span class="line">    <span class="attribute">color</span>: transparent;</span><br><span class="line">    <span class="attribute">-webkit-transition</span>: .<span class="number">1s</span> .<span class="number">2s</span>;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="selector-class">.gradient</span><span class="selector-pseudo">:hover</span> &#123;</span><br><span class="line">    <span class="attribute">background-position</span>: <span class="number">0</span> <span class="number">0</span>;</span><br><span class="line">    <span class="attribute">color</span>: transparent;</span><br><span class="line">    <span class="attribute">transition</span>: .<span class="number">2s</span> <span class="number">0</span>;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h1 id="个人签名"><a href="#个人签名" class="headerlink" title="个人签名"></a>个人签名</h1><p>在页面的右边，有一个侧边栏，现在点击蓝色的<span style='color: lightblue;font-size: large;font-weight: bolder;'>≡</span>按钮即可唤出。一个动画是鼠标放在签名上会让签名变色，把签名的svg文件放到<code>\img\</code>目录下，然后在<code>custom.styl</code>中添加：</p>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-class">.signature-svg</span> &#123;</span><br><span class="line">  <span class="attribute">display</span>: inline-block;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">120px</span>;</span><br><span class="line">  <span class="attribute">height</span>: <span class="number">120px</span>;</span><br><span class="line">  <span class="attribute">background-size</span>: cover;</span><br><span class="line">  <span class="attribute">background-image</span>: <span class="built_in">url</span>(/img/signature.svg);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.sidebar-signature</span> &#123;</span><br><span class="line">  <span class="attribute">position</span>: absolute;</span><br><span class="line">  <span class="attribute">bottom</span>: <span class="number">40px</span>;</span><br><span class="line">  <span class="attribute">right</span>: <span class="number">40px</span>;</span><br><span class="line">  <span class="attribute">display</span>: none;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.sidebar-signature</span><span class="selector-pseudo">:hover</span>,</span><br><span class="line"><span class="selector-class">.sidebar-signature</span><span class="selector-pseudo">:focus</span>  &#123;</span><br><span class="line">  <span class="attribute">filter</span>: <span class="built_in">invert</span>(<span class="number">27%</span>) <span class="built_in">sepia</span>(<span class="number">51%</span>) <span class="built_in">saturate</span>(<span class="number">2878%</span>) <span class="built_in">hue-rotate</span>(<span class="number">346deg</span>) <span class="built_in">brightness</span>(<span class="number">104%</span>) <span class="built_in">contrast</span>(<span class="number">97%</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>我本来想添加渐变效果，但是无奈CSS的pseudoclass无法模拟渐变的效果。</p>
+<h1 id="链接样式"><a href="#链接样式" class="headerlink" title="链接样式"></a>链接样式</h1><p><a href="#">链接</a>自定义成和有点闷骚的主题类似的橙粉渐变，和home按钮呼应，依然是简单的CSS更改即可，在<code>custom.styl</code>中添加：</p>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="keyword">@media</span> (<span class="attribute">-webkit-min-device-pixel-ratio:</span><span class="number">0</span>) &#123;</span><br><span class="line">  <span class="selector-class">.post-body</span> <span class="selector-tag">p</span> <span class="selector-tag">a</span>, <span class="selector-class">.post-category</span> <span class="selector-tag">a</span>, <span class="selector-class">.post-tags</span> <span class="selector-tag">a</span>, <span class="selector-class">.footer-custom</span> <span class="selector-tag">a</span>, <span class="selector-class">.post-body</span> <span class="selector-tag">li</span> <span class="selector-tag">a</span> &#123;</span><br><span class="line">    <span class="attribute">background-color</span>: $black-light;</span><br><span class="line">    <span class="attribute">background-image</span>: <span class="built_in">-webkit-linear-gradient</span>(left, hotPink <span class="number">0%</span>, orange <span class="number">50%</span>, transparent <span class="number">50%</span>);</span><br><span class="line">    <span class="attribute">background-position</span>: <span class="number">100%</span> <span class="number">0</span>;</span><br><span class="line">    <span class="attribute">background-size</span>: <span class="number">200%</span> <span class="number">200%</span>;</span><br><span class="line">    <span class="attribute">color</span>: transparent; </span><br><span class="line">    <span class="attribute">text-decoration</span>:none;</span><br><span class="line">    <span class="attribute">-webkit-transition</span>: .<span class="number">1s</span> .<span class="number">2s</span>;</span><br><span class="line">    <span class="attribute">-webkit-background-clip</span>: text;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="selector-class">.post-body</span> <span class="selector-tag">p</span> <span class="selector-tag">a</span><span class="selector-pseudo">:hover</span>, <span class="selector-class">.post-category</span> <span class="selector-tag">a</span><span class="selector-pseudo">:hover</span>, <span class="selector-class">.post-tags</span> <span class="selector-tag">a</span><span class="selector-pseudo">:hover</span>, <span class="selector-class">.footer-custom</span> <span class="selector-tag">a</span><span class="selector-pseudo">:hover</span>, <span class="selector-class">.post-body</span> <span class="selector-tag">li</span> <span class="selector-tag">a</span><span class="selector-pseudo">:hover</span> &#123;</span><br><span class="line">    <span class="attribute">background-position</span>: <span class="number">0</span> <span class="number">0</span>;</span><br><span class="line">    <span class="attribute">color</span>: transparent;</span><br><span class="line">    <span class="attribute">transition</span>: .<span class="number">4s</span> <span class="number">0</span>;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>== to be update ==</p>
+<h1 id="风格化标题"><a href="#风格化标题" class="headerlink" title="风格化标题"></a>风格化标题</h1><h1 id="评论区"><a href="#评论区" class="headerlink" title="评论区"></a>评论区</h1><h1 id="广播"><a href="#广播" class="headerlink" title="广播"></a>广播</h1><h1 id="项目页面"><a href="#项目页面" class="headerlink" title="项目页面"></a>项目页面</h1><h1 id="分享按钮"><a href="#分享按钮" class="headerlink" title="分享按钮"></a>分享按钮</h1>]]></content>
+      <tags>
+        <tag>设计</tag>
+        <tag>未完成</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>211216</title>
     <url>/2020/12/16/211216/</url>
     <content><![CDATA[<p>更新：</p>
@@ -353,6 +379,7 @@
       </categories>
       <tags>
         <tag>设计</tag>
+        <tag>未完成</tag>
       </tags>
   </entry>
   <entry>
@@ -360,7 +387,6 @@
     <url>/2020/03/24/%E5%85%B3%E4%BA%8E%E8%BF%99%E4%B8%AA%E5%8D%9A%E5%AE%A2/</url>
     <content><![CDATA[<p>本文讨论了关于这个博客的设计和实现，尽管网上Hexo/next的教程非常多，从Github账号的申请到部署再到花里胡哨的美化都应有尽有，但是如何进行功能和视觉要素的选取，如何贴近博客本身的气质，以及对Hexo代码的梳理以便深度美化，也是需要思考的事情。本文会分几个部分，首先会覆盖一些基础的、我跟着走的建站的教程，第二是Hexo/Next博客的文件目录和实现的细说，第三是本博客的设计的一些思考。为了更好的区分，将前两部分和第三部分分为两篇。</p>
 <h1 id="建站"><a href="#建站" class="headerlink" title="建站"></a>建站</h1><h1 id="个性化"><a href="#个性化" class="headerlink" title="个性化"></a>个性化</h1><h1 id="美化"><a href="#美化" class="headerlink" title="美化"></a>美化</h1><p>之前我也在豆瓣日志和简书、甚至最开始的Lofter上持续地更新一些文章，豆瓣主要是音乐/电影/文学之类文艺的内容，简书因为支持 Markdown、方便外链分享和较好的阅读设计常被我用来发一些技术相关的内容，但我最开始有想建一个博客的想法主要是因为还是比较希望有个可以自定义排版的博客，以及希望有个平台可以综合一下我散落互联网各处的痕迹。排版对阅读文字时的影响很大，特别是文学性的作品时，之前很喜欢hansey的</p>
-<p>==To be updated==</p>
 ]]></content>
       <categories>
         <category>教程</category>
@@ -368,10 +394,11 @@
       <tags>
         <tag>Hexo</tag>
         <tag>前端</tag>
+        <tag>未完成</tag>
       </tags>
   </entry>
   <entry>
-    <title>&lt;p style=&quot;font-size:180px;line-height:100%;&quot;&gt;日光&lt;br/&gt;倾城&lt;/p&gt;</title>
+    <title>日光&lt;br/&gt;倾城</title>
     <url>/2020/03/24/%E6%97%A5%E5%85%89%E5%80%BE%E5%9F%8E/</url>
     <content><![CDATA[<p>A Side</p>
 <p>这个夏天热的实在让人直犯恶心，即便空调调到16度外加最大档的四驱风扇的暴力降温也耐不住身上一股直逼大脑的燥热。于是我打开冰箱——当然不是为了制冷，从冷藏室的单隔里抽出一瓶覆满白雾的红身可乐，拉开金属环。那些冒着寒气的液体冲过嗓子的时候，我想起了几十年前去过的九寨沟，那里有台突兀的水车被溪流打得嗤溜溜地转，就如同一个人男人翻飞的喉结。</p>
@@ -646,7 +673,7 @@
       </categories>
   </entry>
   <entry>
-    <title>&lt;p style=&quot;font-size:180px;line-height:100%;&quot;&gt;成都&lt;br/&gt;淹没&lt;/p&gt;</title>
+    <title>成都&lt;br/&gt;淹没</title>
     <url>/2020/03/21/%E6%88%90%E9%83%BD%E6%B7%B9%E6%B2%A1/</url>
     <content><![CDATA[<p><br/><br/><br/></p>
 <p>I<br>我们半夜三点开着车顺着人民南路往北，看见毛泽东像的时候，车里的音乐声被我们苏醒过来的谈话声压抑了下去。那是王菲的《人间》，音乐伴着鼓点和黑暗里的毛泽东像一样褪去了年代感，只留下流光溢彩的质感，而显出朦胧的情调，仿佛我们驾驶的是大雄和叮当猫的时光机，穿梭在五彩斑斓的时光隧道，而不是某辆去年新上市的白色宝马。</p>
@@ -1312,7 +1339,7 @@
       </tags>
   </entry>
   <entry>
-    <title>&lt;p style=&quot;font-size:180px;line-height:100%;&quot;&gt;英雄&lt;/p&gt;</title>
+    <title>英雄</title>
     <url>/2019/05/23/%E8%8B%B1%E9%9B%84/</url>
     <content><![CDATA[<p><br/><br/><br/></p>
 <p>高考完后的第一次回老家时，最让人心累的就是要给三姑六姨无穷无尽的子孙后代补习功课。这种补习并不涉及常规意义上的补习，既没有经济上的交流，又没有学习上的帮助，此行的目的只有一个，就是完成学校批量低价采购的各式《寒假作业》、《开心寒假》——它们厚重不堪地垒在我的弟妹面前，粗糙的封面映出了他们稚脸的吹弹可破。即便其实根本没有什么用处，但上面印出来的铅字是你永远想不到的鬼神，比如时针是顺时针运动还是逆时针运动啦，或者故作神秘地告诉你“啊呀没错作者当时写出这篇文章的时候大概不是很忧伤就是很开心吧”，错别字就是我弟弟也能一眼看出的水准，唯一有价值的可能就是不时夹杂其中的笑话，我的如厕必读。</p>
@@ -1738,7 +1765,7 @@
       </tags>
   </entry>
   <entry>
-    <title>&lt;p style=&quot;font-size:150px;line-height:100%;&quot;&gt;童年不是&lt;br/&gt;童话&lt;/p&gt;</title>
+    <title>童年不是&lt;br/&gt;童话</title>
     <url>/2015/11/19/%E7%AB%A5%E5%B9%B4%E4%B8%8D%E6%98%AF%E7%AB%A5%E8%AF%9D/</url>
     <content><![CDATA[<br/>
 其实我儿时坚信的不是动画片里魔王出现后世界就会陷入火海的预言，也不是奥特曼最终会打败怪兽的神话，更不是父亲口中仿佛永远也没个头的中西方哲学和光速粒子——我相信的，是仅我自身的存在。这么说可能有许些引人发笑，甚至会让人觉得好自恋，但确确实实，那时我坚信世界只有我一个人是真实的，其他人都是假的、为我而存在的。这种想法根深蒂固地扎进我看待这个世界的方法论里，我总是满腹怀疑地揣测父母的一个眼神能折射出怎样的玄机。后来偶然翻开哲学课本，发现开篇第一个章节就对我儿时哲想的独苗大开杀戒，在课本上，它有了自己的名字，那个虚拟的、为我而存在的世界，被这个真实的、我为之而存在的世界，压扁成了课本里的一张纸，纸上落满灰尘，上面写着他的名字：“唯心主义”——你看主义这两个字，长得多像墓碑啊。儿时的同一时期还曾固执地认为踩到两块地砖之间的缝隙会沿其将脚掌切断，所以每次走在上学、放学的路上，我总是在执拗地低着头、紧张地跨过地砖缝，一丝不苟。不过，微博上有人声称这是强迫症的征兆，万幸的是，我早已将这个习惯扼杀在童年那个仿佛隔着一层纸窗户的回忆里了。 
