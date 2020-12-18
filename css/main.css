@@ -1859,7 +1859,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #164d70;
+  background: #6bffdd;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2827,4 +2827,8 @@ embed {
 }
 .vhead>.vsys {
   display: none;
+}
+.henry {
+  font-size: 180px;
+  line-height: 100%;
 }

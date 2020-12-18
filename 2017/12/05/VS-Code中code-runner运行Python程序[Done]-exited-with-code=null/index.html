@@ -86,12 +86,12 @@
 
 
 
-<meta name="description" content="如果在Visual Studio Code中运行Python程序一半就自动停止了，并弹出错误：[Done]-exited-with-code&#x3D;null，这应该是Code Runner插件的问题。直接使用Terminal运行该程序即可避免，或者可以更改Code Runner的设置： （文件-&gt;偏好设置-&gt;设置） 123&amp;#123;    &quot;code-runner.runInTermina">
+<meta name="description" content="如果在Visual Studio Code中运行Python程序一半就自动停止了，并弹出错误：[Done]-exited-with-code&#x3D;null，这应该是Code Runner插件的问题。直接使用Terminal运行该程序即可避免，或者可以更改Code Runner的设置： （文件-&gt;偏好设置-&gt;设置） &amp;#123;    &quot;code-runner.runInTerminal&quot;:">
 <meta property="og:type" content="article">
 <meta property="og:title" content="VS-Code中code-runner运行Python程序[Done]-exited-with-code&#x3D;null">
 <meta property="og:url" content="https://bjason.github.io/2017/12/05/VS-Code%E4%B8%ADcode-runner%E8%BF%90%E8%A1%8CPython%E7%A8%8B%E5%BA%8F[Done]-exited-with-code=null/index.html">
 <meta property="og:site_name">
-<meta property="og:description" content="如果在Visual Studio Code中运行Python程序一半就自动停止了，并弹出错误：[Done]-exited-with-code&#x3D;null，这应该是Code Runner插件的问题。直接使用Terminal运行该程序即可避免，或者可以更改Code Runner的设置： （文件-&gt;偏好设置-&gt;设置） 123&amp;#123;    &quot;code-runner.runInTermina">
+<meta property="og:description" content="如果在Visual Studio Code中运行Python程序一半就自动停止了，并弹出错误：[Done]-exited-with-code&#x3D;null，这应该是Code Runner插件的问题。直接使用Terminal运行该程序即可避免，或者可以更改Code Runner的设置： （文件-&gt;偏好设置-&gt;设置） &amp;#123;    &quot;code-runner.runInTerminal&quot;:">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2017-12-05T22:03:34.000Z">
 <meta property="article:modified_time" content="2020-03-25T05:41:36.000Z">
@@ -414,9 +414,9 @@
       
         <p>如果在Visual Studio Code中运行Python程序一半就自动停止了，并弹出错误：[Done]-exited-with-code=null，这应该是Code Runner插件的问题。直接使用Terminal运行该程序即可避免，或者可以更改Code Runner的设置：</p>
 <p>（<code>文件</code>-&gt;<code>偏好设置</code>-&gt;<code>设置</code>）</p>
-<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    <span class="attr">"code-runner.runInTerminal"</span>: <span class="literal">true</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight json"><table><tr><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    <span class="attr">"code-runner.runInTerminal"</span>: <span class="literal">true</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>或者</p>
-<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    <span class="attr">"code-runner.executorMap.python"</span>: <span class="string">"python -u"</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight json"><table><tr><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    <span class="attr">"code-runner.executorMap.python"</span>: <span class="string">"python -u"</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
       
     
@@ -558,7 +558,7 @@
               
                 <a href="/archives">
               
-                  <span class="site-state-item-count">50</span>
+                  <span class="site-state-item-count">51</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
@@ -1168,4 +1168,5 @@
 
   
 
-<script async>window.onload=function(){var a=document.createElement('script'),b=document.getElementsByTagName('script')[0];a.type='text/javascript',a.async=!0,a.src='/sw-register.js?v='+Date.now(),b.parentNode.insertBefore(a,b)};</script></body></html>
+</body>
+</html>
